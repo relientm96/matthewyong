@@ -12,3 +12,42 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.nav-center {
+  width: 1200px;
+}
+
+nav.nav-center ul {
+  text-align: center;
+}
+nav.nav-center ul li {
+  display: inline;
+  float: none;
+}
+nav.nav-center ul li a {
+  display: inline-block;
+}
+
+.icons {
+  float: right;
+  height: 60px;
+  width: 150px;
+}
+
+#logo-container{
+  position: relative;
+  left: 150px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
