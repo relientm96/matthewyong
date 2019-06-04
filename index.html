@@ -12,40 +12,43 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body style="background-color: #EAE&DC">
 
-  <nav class="indigo darken-3" role="navigation">
-    <div class="nav-center">
+  <nav class="grey darken-4" role="navigation">
+    <div class="nav-center container">
       <a id="logo-container" href="#" class="brand-logo left">Matthew Yong</a>
-      <ul class="right hide-on-med-and-down">
+      <ul id="icon-container" class="right hide-on-med-and-down">
         <li>
           <a href="https://github.com/relientm96" target="_blank"><i class="fa fa-github fa-2x"></i></a>
         </li>
         <li>
           <a href="https://linkedin.com/in/matthew-yong-461149140/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
         </li>
-        <li>
-          <a href="https://www.facebook.com/matthew.yong.18" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-        </li><a href="https://www.facebook.com/matthew.yong.18" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
       </ul>
     </div>
   </nav>
-
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center blue-text">Matthew Yong</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">Masters of Electrical Engineering</h5>
-        <h5 class="header col s12 light">Electronics and Software</h5>
+  <br id="bannerBr">
+  <!--- <br style="list-style: height 0;"> --->
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text text-lighten-2">Matthew Yong</h1>
+        <div class="row center">
+          <h5 class="header col s12 white-text">Graduate Electrical Engineering Student</h5>
+          <h5 class="header col s12 white-text">University of Melbourne</h5>
+        </div>
+        <div class="row center">
+          <a href="#aboutMeSection" class="btn-large waves-effect waves-light red lighten-1">About Me</a>
+        </div>
+        <br><br>
       </div>
-      <div class="row center">
-        <a href="#aboutMeSection" class="btn-large waves-effect waves-light red">About Me</a>
-      </div>
-      <br><br>
-
+    </div>
+    <div class="parallax">
+      <img src="images/titleBackground.jpg" class="mainBackgroundImage" alt="">
     </div>
   </div>
+
 
   <div class="container">
     <div class="section">
@@ -56,7 +59,7 @@
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">library_books</i></h2>
             <h5 class="center">Education</h5>
-            <p class="light center"> Eduational Qualifications </p>
+            <p class="light center"> Related Courses and Qualifications </p>
           </div>
           <div class="row center">
               <a href="#educationSection" class="btn-large waves-effect waves-light red">View</a>
@@ -90,39 +93,66 @@
     <br><br>
   </div>
 
+  <div class="divider"></div>
+
   <div class="container">
       <div class="section" id="aboutMeSection">
-        <h3>About Me</h3>
-        <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          Excepteur sint occaecat cupidatat non proident, 
-          sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        </p>
+        <h3 class="header">About Me</h3>
+        <div class="row">
+          <div class="col md 8 col md push-4">
+            <img src="images/profilePic.jpg" id="profilePic"> </img>
+          </div>
+          <div class="col md 4 col md pull-8">
+            <p class="flow-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="divider"></div>
 
     <div class="container">
         <div class="section" id="educationSection">
           <h3>Education</h3>
-          <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          </p>
-        </div>
+          <div class="section">
+
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">
+                    <h5 class="hr"> University of Melbourne </h5>
+                </span>
+                <h6>Masters of Electrical Engineering - MEng, Electrical Engineering </h6>
+                <h7>2018 - 2020</h7>
+                <br>
+                <h8>Weighted Average Mark: 72.00% (Current)</h8>
+                <br>
+              </div>
+            </div>
+          
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">
+                    <h5 class="hr"> University of Melbourne </h5>
+                </span>
+                <h6>Bachelor of Science - Bioengineering Systems </h6>
+                <h7>2015 - 2018</h7>
+                <br>
+                <h8>Weighted Average Mark: 71.36%</h8>
+              </div>
+            </div>
+          </div>
       </div>
+    </div>
+
+    <div class="divider"></div>
 
     <div class="container">
         <div class="section" id="projectSection">
@@ -130,31 +160,35 @@
           <div class="slider">
               <ul class="slides">
                 <li>
-                  <img src="images/flappybirdexp.gif"> <!-- random image -->
+                  <img src="images/flappybirdexp.gif" id="embeddedGif"> 
                   <div class="caption center-align">
                     <h3>Embedded Game Console</h3>
-                    <h5 class="light grey-text text-lighten-3">Embedded Electronics IOT Project</h5>
+                    <h5 class="light grey-text text-lighten-3">Embedded Electronics IoT Project</h5>
+                    <a class="waves-effect waves-light btn modal-trigger" href="#embeddedModal">See More</a>
                   </div>
                 </li>
                 <li>
-                  <img src="images/cloudProject.PNG"> <!-- random image -->
+                  <img src="images/webSiteDemo.gif" id="clusterGif"> 
                   <div class="caption center-align">
                     <h3 class="light grey-text text-lighten-3">Cluster and Cloud Computing</h3>
                     <h5 class="light grey-text text-lighten-3">Cloud Application using Twitter Data Analytics</h5>
+                    <a class="waves-effect waves-light btn modal-trigger" href="#clusterModal">See More</a>
                   </div>
                 </li>
                 <li>
-                    <img src="images/mainPage.jpg"> <!-- random image -->
+                    <img src="images/onlineCodeEditorDemo.gif" id="codeGif">
                     <div class="caption center-align">
-                      <h3>Online C Compiler</h3>
+                      <h3>Online C Code Editor</h3>
                       <h5 class="light grey-text text-lighten-3">An online C Compiler Web Application</h5>
+                      <a class="waves-effect waves-light btn modal-trigger" href="#editorModal">See More</a>
                     </div>
                   </li>
                 <li>
-                    <img src="https://i.pinimg.com/originals/c7/09/ac/c709ac7c72d0a029aee921a38a8feb6e.jpg"> <!-- random image -->
+                    <img src="https://i.pinimg.com/originals/c7/09/ac/c709ac7c72d0a029aee921a38a8feb6e.jpg" id="mobileGif"> <!-- random image -->
                     <div class="caption center-align">
-                      <h3>Mobile App</h3>
-                      <h5 class="light grey-text text-lighten-3">An app for Small Christian Communities</h5>
+                      <h3>Gospel Community Application</h3>
+                      <h5 class="light grey-text text-lighten-3">A mobile app for Small Christian Communities</h5>
+                      <a class="waves-effect waves-light btn modal-trigger" href="#mobileModal">See More</a>
                     </div>
                 </li>
               </ul>
@@ -162,25 +196,50 @@
         </div>
       </div>
 
+    <div class="divider"></div> 
       
     <div class="container">
         <div class="section" id="workSection">
           <h3>Work Experience</h3>
-          <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          </p>
-        </div>
-      </div>
+          <div class="section">
 
-  <footer class="page-footer indigo">
+            <div class="card">
+                <div class="card-content">
+                  <span class="card-title">
+                      <h5 class="hr"> University of Melbourne </h5>
+                  </span>
+                  <h6> Research Assistant </h6>
+                  <h6>Jan 2018 - Feb 2018</h6>
+                  <br>
+                  <p>
+                      The EMU is a three-dimensional robotic manipulandum for rehabilitation of the upper extremity for patients with neurological injury. 
+                      I was tasked on enhancing the current robot's capabilities by creating new prototype parts
+                      using SolidWorks, a 3D Computer Aided Design program.
+                      Applied detailed mechanical design techniques and testing throughout prototype development.
+                  </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                  <span class="card-title">
+                      <h5 class="hr"> myBurgerLab </h5>
+                  </span>
+                  <h6> Staff </h6>
+                  <h6>March 2015 - June 2015</h6>
+                  <br>
+                  <p>
+                     I was tasked in to performing kitchen duties.
+                  </p>
+                </div>
+            </div>
+
+          </div>
+         </div>
+        </div>
+    </div>
+
+  <footer class="page-footer grey darken-4">
 
     <div class="container">
       <div class="row">
@@ -206,11 +265,90 @@
 
   </footer>
 
+  <!-- Modals -->
+
+  <!-- Game Console Modal -->
+  <div id="embeddedModal" class="modal">
+    <div class="modal-content">
+      <h4 class="hr">Embedded Game Console</h4>
+      <p>
+          A class project involving the design and development of an electronic embedded system. 
+          Altium was used to design the Printed Circuit Board and 
+          AVR Studio was used to program the ATMEGA-16 micro-controller in C. 
+          <br><br>
+          Games:<br>
+          • Flappy Bird (simplified)<br>
+          • Etch A Sketch<br>
+          • Pong (with two level AIs)<br>
+          • Monty Hall<br>
+          <br>
+          Features:<br>
+          • Screen brightness control using PWM. <br>
+          • Four movement buttons and two action buttons. <br>
+          • Battery level detector. <br>
+          • Serial Peripheral Interface communication between micro-controller and externals. <br>
+        </p>
+    </div>
+  </div>
+
+  <!-- Cluster Modal -->
+  <div id="clusterModal" class="modal">
+    <div class="modal-content">
+      <h4 class="hr">Cloud and Cluster Computing Project</h4>
+      <p>
+          Worked in a group of five to create a cloud based web application that 
+          performs twitter harvesting and large data analysis on tweets from throughout Australia. 
+          The data was harvested using Python, stored on a CouchDB cluster and was hosted on the NeCTAR Research Cloud.
+           I worked on the automatic deployment of the system to any remote host using Ansible and bash scripts. 
+          <br><br>
+          Tools:<br>
+          • Docker<br>
+          • CouchDB (for MapReducing data)<br>
+          • Ansible<br>
+          • Python (Twitter Harvesting)<br>
+          • Flask<br>
+          • Apache2<br>
+        </p>
+    </div>
+  </div>
+
+  <!-- Web Editor Modal -->
+  <div id="editorModal" class="modal">
+      <div class="modal-content">
+        <h4 class="hr">Online C Code Editor</h4>
+        <p>
+            An online C Code integrated development environment web application created in C++ 
+            Users can log on to run and compile C code (GCC 6.3.0). Code samples are also provided.
+            <br><br>
+            Built with:<br>
+            • POCO C++ Libraries<br>
+            • CodeMirror as code editor<br>
+            • HTML, CSS and vanilla Javascript<br>
+          </p>
+      </div>
+  </div>
+
+  <!-- Mobile Modal -->
+  <div id="mobileModal" class="modal">
+      <div class="modal-content">
+        <h4 class="hr">Gospel Community Application</h4>
+        <p>
+            A mobile application developed to provide administrative tools for small christian community members.
+            Built with React Native, expo and data stored on firebase.
+            <br><br>
+            Features:<br>
+            • Event Organization<br> 
+            • Prayer List<br>
+            • Weekly Study Organization<br>
+          </p>
+      </div>
+  </div>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="js/site.js"></script>
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
   </body>
 </html>
