@@ -123,3 +123,12 @@ html {
   justify-content: center
 }
 
+#systemarchitectureImage{
+  max-height: 30%;
+  max-width: 100%;
+}
+
+#internalGifDemos{
+  max-height: 100%;
+  max-width: 100%;
+}
