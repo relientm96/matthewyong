@@ -1,15 +1,20 @@
 /* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+/* Matthew Yong */
+
+ /*Tag Styling*/
+ 
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #eee;
+}
 
 div {
   display: block;
 }
 
+/*Nav Bar Styling*/
 .icon-block {
   padding: 0 15px;
 }
@@ -57,10 +62,7 @@ nav.nav-center ul li a {
   right: 150px; 
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
+/*Header Lines*/
 .hr {
   display: inline-block;
 }
@@ -85,7 +87,7 @@ html {
 
 #bannerBr{
   content: "";
-  margin: 2.5em;
+  margin: 2.4em;
   display: block;
   font-size: 23%;
 }
@@ -104,10 +106,12 @@ html {
 
 #mobileGif{
   filter: brightness(40%);
+  height: 100%;
+  width: 100%;
 }
 
 .modal {
-  width: 80% !important ;
+  width: 60% !important ;
   height: 80% !important ; 
 }
 
@@ -117,8 +121,8 @@ html {
 }
 
 #profilePic{
-  height: 300px;
-  width: 300px;
+  height: 100%;
+  width: 100%;
   margin-right: 20px;
   justify-content: center
 }
@@ -131,4 +135,47 @@ html {
 #internalGifDemos{
   max-height: 100%;
   max-width: 100%;
+}
+
+#bannerContainer{
+  width: 100%;
+  max-width:initial;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  align-content: center;
+}
+
+.nopaddingbanner{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.section-content{
+  margin-top: 30px;
+}
+
+.iconCenteringAnchor{
+  justify-content: center;
+  align-items:center;
+}
+
+.aboutMecontainers {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 90%;
+}
+
+.modalContainers{
+  margin: 0 auto;
+  max-width: 100%;
+  width: 90%;
+}
+
+#modalGospelCommunityApp{
+  margin: 0 auto;
+  max-width: 100%;
+  width: 90%;
 }
