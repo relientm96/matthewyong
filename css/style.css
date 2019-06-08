@@ -179,3 +179,24 @@ nav.nav-center ul li a {
   max-width: 100%;
   width: 90%;
 }
+
+.table {
+	display: table;  
+  margin: 0 auto;
+  width: 20%;
+}
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	}
+	ul#horizontal-list li {
+		display: inline;
+  }
+  
+#profilePictureContainer{
+  margin: 0 auto;
+  max-width: 100%;
+  width: 90%;
+  align-items: center;
+}
