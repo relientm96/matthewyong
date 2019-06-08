@@ -1,4 +1,4 @@
-//For Smooth Scrolling
+//For Slider Initialization
 $(document).ready(function(){
 $('.slider').slider();
 });
@@ -12,3 +12,15 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.modal').modal();
 });
+
+//For Smooth Scrolling to anchor
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+

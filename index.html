@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Matthew Yong</title>
 
-  <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 </head>
 
 <body>
@@ -91,32 +91,44 @@
           <div class="row section-content">
     
             <div class="col s12 m4 l4">
-              <div id="profilePictureContainer">
+              <figure>
                 <img src="images/profilePic.jpg" id="profilePic"> </img>
-              </div>
+                <div class="container">
+                    <div class="row">
+                      <div class="span10">
+                        <div class="social-icons">
+                          <ul>
+                            <li><a href="https://linkedin.com/in/matthew-yong-461149140/" target="_blank"><i style="color:#0077B5;" class="fa fa-linkedin fa-1x"></i></a></li>
+                            <li><a href="https://github.com/relientm96" target="_blank"><i style="color: #000;" class="fa fa-github fa-1x"></i></a></li>
+                            <li><a href="mailto:matthewyfy@gmail.com" target="_blank"><i style="color:grey;" class="fa fa-envelope fa-1x"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </figure>
             </div>
 
             <div class="col s12 m4 l4">
               <div class="aboutMecontainers">
                 <p>
                   <h5><u>Hello there!</u></h5>
-                  <div style="padding-top:10px;position:relative;">
-                    <br>
-                    I am a current graduate student, studying Electrical Engineering at the University of Melbourne 
-                    with a passion in building software programs and electronics. I am an avid self learner and have 
-                    developed many projects in both classes and as my hobby.
+                  <br>
+                  <div style="position: relative;">
+                    <p>
+                    I am a current masters student, studying Electrical Engineering at the University of Melbourne 
+                    with a passion for building software programs and electronics. I am an avid self learner and have 
+                    developed many projects in both classes and as my hobby. 
+                    Apart from developing, I play Ultimate Frisbee competitively representing 
+                    both university and state.
+                    </p>
+                    <p>
                     The type of technologies used in my projects range from Web Applications or Mobile Applications 
-                    to Electronic Embedded Systems or Arduino.     
-                    <div class="table">
-                        <ul id="horizontal-list">
-                          <li>
-                            <a style="padding:10px" href="https://github.com/relientm96" target="_blank"><i style="color: #000;"class="fa fa-github fa-3x"></i></a>
-                          </li>
-                          <li>
-                            <a style="padding:10px" href="https://linkedin.com/in/matthew-yong-461149140/" target="_blank"><i style="color: #0077B5;" class="fa fa-linkedin fa-3x"></i></a>
-                          </li>
-                        </ul>
-                    </div>
+                    to Electronic Embedded Systems or Arduino. 
+                    </p>
+                    <p>Feel free to <a href="mailto:matthewyfy@gmail.com" target="_blank">email me</a> and <a href="https://github.com/relientm96" target="_blank">check out my projects</a>!
+                    </p>   
+
                   </div>
                 </p>
 
@@ -128,27 +140,29 @@
               <div class="aboutMecontainers">
                 <p>
                 <h5 style="text-align: center"><u>Skills</u></h5>
-                <div style="padding-top:20px; position: relative;">
+                <div style="padding-top:10px;">
+                <p>
                 <div class="row">
                   <div class="col s4" style="text-align: center;">
                     <h6 class="hr">Languages</h6> 
                     <div style="text-align: center">
-                       C++<br>
                        C<br>
-                       Javascript<br>
+                       C++<br>
                        Java<br>
                        Python<br>
+                       Javascript<br>
                     </div>
                   </div>
                   <div class="col s4" style="text-align: center;">
                     <h6 class="hr">Tools</h6> 
                     <br>
                     <div style="text-align: center">
-                         NodeJs<br>
-                         React Native <br>
-                         Express <br>
-                         Ansible<br>
+                         Git<br>
                          Docker<br>
+                         Ansible<br>
+                         NodeJs<br>
+                         Express.js <br>
+                         React Native <br>
                          Android Studio<br>
                     </div>
                   </div>
@@ -156,13 +170,13 @@
                     <h6 class="hr">Engineering</h6> 
                     <br>
                     <div style="text-align: center">
-                      MATLAB<br>
                       Altium<br>
-                      SolidWorks<br>
                       Verilog<br>
+                      MATLAB<br>
+                      SolidWorks<br>
                     </div>
-  
                   </div>
+                </p>
 
                 </div>
                 </p>
@@ -187,7 +201,7 @@
             <div class="card">
               <div class="card-content">
                 <span class="card-title">
-                    <h5 class="hr"> University of Melbourne<span img="images/unimelb.jpg"></span></h5>
+                  <h5 class="hr"> University of Melbourne</h5>
                 </span>
                 <h6>Masters of Electrical Engineering - MEng, Electrical Engineering </h6>
                 <h7>2018 - 2020</h7>
@@ -195,7 +209,7 @@
                 <h8>Weighted Average Mark: 72.00% (Current)</h8>
                 <br><br>
                 <p>
-                  <h8><u>Electrical Based</u></h8> 
+                  <h8><u>Electrical Subjects</u></h8> 
                     <br>
                     • Embedded System Design<br>
                     • Electrical Device Modeling<br>
@@ -204,7 +218,7 @@
                     • Electronic Circuit Design<br>
                     • Control Systems <br>
                     <br>
-                  <h8><u>Computing Based</u></h8> 
+                  <h8><u>Computing Subjects</u></h8> 
                   <br>
                     • Cluster and Cloud Computing<br>
                   <br>
@@ -217,7 +231,7 @@
                 <span class="card-title">
                     <h5 class="hr"> University of Melbourne </h5>
                 </span>
-                <h6>Bachelor of Science - Bioengineering Systems </h6>
+                <h6>Bachelor of Science - BSc, Bioengineering Systems </h6>
                 <h7>2015 - 2018</h7>
                 <br>
                 <h8>Weighted Average Mark: 71.36%</h8>
@@ -255,7 +269,7 @@
           <div class="slider">
               <ul class="slides">
                 <li>
-                  <img src="images/flappybirdexp.gif" id="embeddedGif"> 
+                  <img src="images/flappybirdexp.gif" id="embeddedGif">                   
                   <div class="caption center-align">
                     <h3>Embedded Game Console</h3>
                     <h5 class="light grey-text text-lighten-3">Embedded Electronics IoT Project</h5>
@@ -307,7 +321,8 @@
                   <h6>Jan 2018 - Feb 2018</h6>
                   <br>
                   <p>
-                      The EMU is a three-dimensional robotic manipulandum for rehabilitation of the upper extremity for patients with neurological injury. 
+                      The EMU is a robotic rehabilitation device for patients with upper limb neurological injury. 
+                      It provides mechanical support through gravity compensation.
                       I was tasked on enhancing the current robot's capabilities by creating new prototype parts
                       using SolidWorks, a 3D Computer Aided Design program.
                       Applied detailed mechanical design techniques and testing throughout prototype development.
@@ -346,10 +361,9 @@
     </div>
 
   <footer class="page-footer grey darken-4">
-
     <div class="container">
       <div class="row">
-        <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
+        <div class="col s12 m4 l3"> 
           <h5 class="white-text">Contact Details</h5>
           <p class="grey-text text-lighten-4">Mobile: +61452139664</p>
           <p class="grey-text text-lighten-4">Email: matthewyfy@gmail.com</p>
@@ -380,7 +394,7 @@
           <h4 class="hr" style="text-align: center">Embedded Game Console</h4>
           <p>
               <div class="modalContainers">
-                  <img src="images/flappybirdexp.gif" id="internalGifDemos"> 
+                <a data-fancybox href="images/flappybirdexp.gif"><img src="images/flappybirdexp.gif"></a>
               </div>
               <br><br>
               A class project involving the design and development of an electronic embedded system. 
@@ -401,10 +415,12 @@
               • Battery level detector using Analog to Digital Conversion. <br>
               • Serial Peripheral Interface(SPI) communication between micro-controller and externals. <br>
               <br>
-              <h5 style="text-align: center">2D PCB Layout</h5>
-              <img src="images/pcbLayout.JPG" id="internalGifDemos"> 
+              <div class="modalContainers">
+                  <h5 style="text-align: center">2D PCB Layout</h5>
+                  <a data-fancybox="gallery_pcb" href="images/pcbLayout.JPG"><img src="images/pcbLayout.JPG" id="internalGifDemos"></a>
+              </div>
               <h5 style="text-align: center">3D PCB Layout</h5>
-              <img src="images/pcbLayout3d.JPG" id="internalGifDemos"> 
+              <a data-fancybox="gallery_pcb" href="images/pcbLayout3d.JPG"><img src="images/pcbLayout3d.JPG" id="internalGifDemos"></a>
             </p>
         </div>
     </div>
@@ -417,7 +433,7 @@
           <h4 class="hr">Cloud and Cluster Computing Project</h4>
             <p>
               <div class="modalContainers">
-                  <img src="images/webSiteDemo.gif" id="internalGifDemos"> 
+                  <a data-fancybox href="images/webSiteDemo.gif"><img src="images/webSiteDemo.gif"></a>
               </div>
               <br><br>
               Worked in a group of five to create a cloud based web application that 
@@ -436,7 +452,7 @@
                 <h6><u>Designed System Architecture</u></h6>
                 <br>
                 <div class="modalContainers">
-                    <img src="images/systemarchitecture.png" id="internalGifDemos"> 
+                    <a data-fancybox href="images/systemarchitecture.png"><img src="images/systemarchitecture.png"></a>
                 </div>
             </p>
         </div>
@@ -450,7 +466,7 @@
         <h4 class="hr">Online C Code Editor</h4>
             <p>
                 <div class="modalContainers">
-                    <img src="images/onlineCodeEditorDemo.gif" id="internalGifDemos"> 
+                    <a data-fancybox href="images/onlineCodeEditorDemo.gif"><img src="images/onlineCodeEditorDemo.gif"></a>
                 </div>
               <br><br>
               An online C Code integrated development environment web application created in C++ where
@@ -477,10 +493,10 @@
             <div id="modalGospelCommunityApp">
               <div class="row center-align">
                   <div class="col s6">
-                    <img class="responsive-img" src="images/frontLoginScreen.jpg" id="internalGifDemos" > 
+                      <a data-fancybox="gallery_gcapp" href="images/frontLoginScreen.jpg"><img src="images/frontLoginScreen.jpg" id="internalGifDemos"></a>
                   </div>
                   <div class="col s6">
-                      <img class="responsive-img" src="images/homeScreen.png" id="internalGifDemos" > 
+                      <a data-fancybox="gallery_gcapp" href="images/homeScreen.png"><img src="images/homeScreen.png" id="internalGifDemos"></a>
                   </div>
               </div>
             </div>
@@ -505,6 +521,10 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-  <script src="js/site.js"></script>
-  </body>
+  
+  <script src="js/site.js"></script> 
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
 </html>
