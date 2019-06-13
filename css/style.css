@@ -110,6 +110,14 @@ nav.nav-center ul li a {
   width: 100%;
 }
 
+#arduinoGif{
+  filter: brightness(30%);
+}
+
+#gameGif{
+  filter: brightness(40%);
+}
+
 .modal {
   width: 60% !important ;
   height: 80% !important ; 
@@ -269,4 +277,12 @@ figure figcaption {
 .social-icons ul li a:active i {
   transition: none;
   color: #0b161c;
+}
+
+p.aboutMeMain{
+  font-size: 16.5px;
+}
+
+.toolTitle{
+  padding-left: 4px;
 }
