@@ -122,7 +122,7 @@
                       <p class="aboutMeMain">                      
                         I love to build awesome software or electronics to learn! <br><br>
                         In my spare time, I have developed projects including 
-                        <b>Web</b> (front and back end), <b>Mobile</b> Applications, <b>Cloud</b> Deployment,
+                        <b>Web</b> (front and back end) and <b>Mobile</b> Applications, <b>Cloud</b> Deployment,
                         <b>Object Oriented</b> games and <b>embedded electronics</b> which can all be viewed 
                         <a href="#projectSection">here</a>!
                         <br><br>
@@ -144,7 +144,7 @@
                     <div style="text-align: center;" class="card">
                         <div class="card-content">
                         <div class="card-title>">
-                            <h5 class="hr">Skills and Abilities </h5>
+                            <h5 class="hr">Skills at a Glance </h5>
                         </div>
                           <p class="aboutMeMain">                      
                               <div class="row">
@@ -223,7 +223,7 @@
                 <h7>2018 - 2020</h7>
                 <br><br>
                 <p>
-                  <h8><u>Computing Subjects</u><i class="material-icons" style="padding-left:10px;font-size:20px;position:relative;top:5px;">computer</i></h8>
+                  <h8><u>Software Subjects</u><i class="material-icons" style="padding-left:10px;font-size:20px;position:relative;top:5px;">computer</i></h8>
                   <br><br>
                     • Cluster and Cloud Computing<br>
                   <br>
@@ -257,9 +257,9 @@
                     • Electrical Network and Analysis<br>
                     • Digital System Design<br>
                   <br>
-                  <h8><u>Computing Subjects</u><i class="material-icons" style="padding-left:10px;font-size:20px;position:relative;top:5px;">desktop_windows</i></h8>
+                  <h8><u>Software Subjects</u><i class="material-icons" style="padding-left:10px;font-size:20px;position:relative;top:5px;">desktop_windows</i></h8>
                   <br><br>
-                    • Design of Algorithms<br>
+                    • Design of Algorithms (Data Structures & Algorithms)<br>
                     • Object Oriented Software Development<br>
                     • Engineering Computation<br>
                   <br>
@@ -286,8 +286,8 @@
                   <img src="images/flappybirdexp.gif" id="embeddedGif">                   
                   <div class="caption center-align">
                     <h3>Embedded Game Console</h3>
-                    <h5 class="light grey-text text-lighten-3">Embedded Electronics IoT Project</h5>
-                    <a class="waves-effect waves-light btn modal-trigger" href="#embeddedModal">See More</a>
+                    <h5 class="light grey-text text-lighten-3">Embedded Electronics Project</h5>
+                    <a id="seemorebtn" class="waves-effect waves-light btn modal-trigger" href="#embeddedModal">See More</a>
                   </div>
                 </li>
                 <li>
@@ -423,38 +423,48 @@
 
   <!-- Game Console Modal -->
   <div id="embeddedModal" class="modal">
-    <div class="modal-content">
+    <div class="modal-content" inDuration="400">
         <div class="modalContainers">
           <h4 class="hr" style="text-align: center">Embedded Game Console</h4>
           <p>
-              <div class="container">
-                <a data-fancybox href="images/flappybirdexp.gif"><img src="images/flappybirdexp.gif" id="internalGifDemos"></a>
+              <div class = "row">
+                <div class = "col s6">
+                  <a data-fancybox="gallery_pcb" href="images/flappybirdexp.gif" data-caption="Flappy Bird game demo"><img src="images/flappybirdexp.gif" id="internalGifDemos"></a>
+                </div>
+                <div class = "col s6">
+                  <a data-fancybox="gallery_pcb" href="images/pongDemo.gif" data-caption="Pong Game Demo"><img src="images/pongDemo.gif" id="internalGifDemos"></a>
+                </div>
+              </div>
+              <div class = "row">
+                  <div class = "col s6">
+                    <a data-fancybox="gallery_pcb" href="images/pwmBrightness.gif" data-caption="Changing brightness using PWM"><img src="images/pwmBrightness.gif" id="internalGifDemos"></a>
+                  </div>
+                  <div class = "col s6">
+                    <a data-fancybox="gallery_pcb" href="images/pcbLayout3d.JPG" data-caption="3D PCB Layout on Altium Designer"><img src="images/pcbLayout3d.JPG" id="internalGifDemos"></a>
+                  </div>
               </div>
               <br><br>
-              A class project involving the design and development of an electronic embedded system. 
+              Project involving the design and development of a game boy electronic embedded system. 
               Altium Designer was used to design the Printed Circuit Board (PCB) and 
               AVR Studio to program the ATMEGA-16 micro-controller in C. 
               <br><br>
-              (View project repository <a href="https://github.com/relientm96/gameconsole" target="_blank"> here </a>)
+              (View source code <a href="https://github.com/relientm96/gameconsole" target="_blank"> here </a>)
               <br><br>
-              Games:<br>
+              Games Programmed:<br>
               • Flappy Bird (simplified)<br>
               • Etch A Sketch<br>
               • Pong (with two level AIs)<br>
               • Monty Hall<br>
               <br>
-              Features:<br>
-              • Screen brightness control using Pulse Width Modulation (PWM). <br>
-              • Four movement buttons and two action buttons. <br>
+              Utilized:<br>
+              • Boost Converter power circuit to step up from 1.5V battery source to 3.3 V. <br>
+              • Screen brightness control by adjusting Pulse Width Modulation (PWM) frequency. <br>
+              • AVR Studio as an IDE to flash C code onto micro-controller via a JTAG board. <br> 
+              • C character library used for LCD character displays. <br>
+              • Micro-controller interrupt used for event driven program including timer and button interrupts. <br>
               • Battery level detector using Analog to Digital Conversion. <br>
-              • Serial Peripheral Interface(SPI) communication between micro-controller and externals. <br>
+              • Serial Peripheral Interface(SPI) and bit banging communication between micro-controller to LCD. <br>
               <br>
-              <div class="modalContainers">
-                  <h5 style="text-align: center">2D PCB Layout</h5>
-                  <a data-fancybox="gallery_pcb" href="images/pcbLayout.JPG"><img src="images/pcbLayout.JPG" id="internalGifDemos"></a>
-              </div>
-              <h5 style="text-align: center">3D PCB Layout</h5>
-              <a data-fancybox="gallery_pcb" href="images/pcbLayout3d.JPG"><img src="images/pcbLayout3d.JPG" id="internalGifDemos"></a>
             </p>
         </div>
     </div>
@@ -464,29 +474,38 @@
   <div id="clusterModal" class="modal">
     <div class="modal-content">
         <div class="modalContainers">
-          <h4 class="hr">Cloud and Cluster Computing Project</h4>
+          <h4 class="hr">Tweet Analysis Cloud Web Application</h4>
             <p>
-              <div class="container">
-                  <a data-fancybox href="images/webSiteDemo.gif"><img src="images/webSiteDemo.gif" id="internalGifDemos"></a>
+              <div class="row">
+                  <div class="col s6">
+                    <a data-fancybox="gallery_Cloud" href="images/webSiteDemo.gif" data-caption="Sample demo of the application"><img src="images/webSiteDemo.gif" id="internalGifDemos"></a>
+                  </div>
+                  <div class="col s6">
+                    <a data-fancybox="gallery_Cloud" href="http://www.youtube.com/watch?v=Mtsm-FB_oQE&t=3m52s" data-caption="Presentation on System Design and Ansible Deployment Demo"><img src="images/youtubeDemo.jpg" id="internalGifDemos"></a>
+                  </div>
+                  <br>
+                  <h5 style="text-align:center;"><a href="http://45.113.235.192/app" target="_blank">Take a look here!</a></h5>
               </div>
+              <br>
+              This application was made to explore the amount of wrathful, lazy, greedy or lustful
+              tweets in Australia. 
+              <br>Key features of the system include:
               <br><br>
-              Worked in a group of five to create a cloud based web application that 
-              performs twitter harvesting and large data analysis on tweets from throughout Australia. 
-              The data was harvested using Python, stored on a CouchDB cluster and hosted on the NeCTAR Research Cloud.
-              I worked on the automatic deployment of the system to any remote host using Ansible and bash scripts. 
-              <br><br>
-              Click <a href="http://45.113.235.192/app" target="_blank">here</a> or <a href="http://45.113.235.192/app" targer="_blank">here</a> to run the application.
+              • Tweets harvested across Australia using RESTAPI calls through tweepy. <br>
+              • Around 500,000 tweeets stored across a three-node CouchDB database cluster.  <br>
+              • Tweets processed using sentiment analysis and word indexing. <br>
+              • Hosted on a three Ubuntu based virtual machine cluster cloud system. 
               <br><br>
               (View project repository <a href="https://github.com/relientm96/SinsOnTwitter" target="_blank"> here </a>)
-              <br>
-              <h6><u>Key Features</u></h6>
-              • Three node CouchDB Cluster. <br>
-              • Flask Backend and Apache2 for deployment. <br>
-              • Ansible and Bash Script for Automation Deployment. <br>
-              • Python based tweet streamer using Tweepy library. <br>
-              • Deployed onto three virtual machines (Each on Ubuntu 18.04) on the NecTAR Research Cloud.
               <br><br>
-                <h6><u>Designed System Architecture</u></h6>
+              Utilized:<br>
+              • Ansible for automated system deployment which includes cloud resource provisioning 
+                and Linux bash commands. <br>
+              • CouchDB three node cluster setup using docker for containerization. <br>
+              • Linux operating system command tools and environment (Ubuntu 18.04). <br>
+              • Apache2 as the HTTP server which proxies requests to the web application. <br>
+              <br>
+                <h6><u>Diagram of System Architecture</u></h6>
                 <br>
                 <div class="modalContainers">
                     <a data-fancybox href="images/systemarchitecture.png">
@@ -506,22 +525,29 @@
         <div class="modalContainers">
         <h4 class="hr">Online C Code Editor</h4>
             <p>
-                <div class="container">
-                    <a data-fancybox href="images/onlineCodeEditorDemo.gif"><img src="images/onlineCodeEditorDemo.gif" id="internalGifDemos"></a>
-                </div>
+              <div style="text-align: center;">
+                  <a data-fancybox href="images/onlineCodeEditorDemo.gif" data-caption="Sample demonstration of application"><img src="images/onlineCodeEditorDemo.gif"></a>
+                  <h5><a href="http://13.229.230.199/" target="_blank">Try it here!</a></h5>
+              </div>
               <br><br>
-              An online C Code integrated development environment web application created in C++ where
-              users can log on to run and compile C code (GCC 6.3.0). Code samples also provided as buttons on screen.
-              <br><br>
-              Click <a href="http://13.229.230.199/" target="_blank">here</a> to run the application.
+              Self made online C Code integrated development environment web application where
+              users can log on to run C programs. Backend server created using C++ and deployed 
+              onto a Windows 2019 Server instance on the AWS cloud.
+              Simple code samples are provided for users.
               <br><br>
               (View project repository <a href="https://github.com/relientm96/online_code_editor" target="_blank"> here </a>)
               <br><br>
-              Built with:<br>
+              Features: <br>
+              • C++ Backend with GCC 6.3.0 C compiler<br>
+              • FrontEnd user code text editor interface<br>
+              • Sample simple C programs provided<br>
+              • Registration feature for users<br>
+              <br>
+              Utilized:<br>
+              • RESTAPI calls to backend and handling of JSON payload. <br>
               • POCO C++ Libraries<br>
               • CodeMirror as code editor<br>
               • HTML, CSS, Javascript and Bootstrap for front end design<br>
-              • Application hosted and deployed onto a Windows EC2 Amazon instance.<br>
             </p>
         </div>
       </div>
@@ -530,31 +556,38 @@
   <!-- Mobile Modal -->
   <div id="mobileModal" class="modal">
       <div class="modal-content">
-        <h4 class="hr">Social Media Community Application</h4>
-            <div id="modalGospelCommunityApp">
-              <div class="row center-align">
-                  <div class="col s6">
-                      <a data-fancybox="gallery_gcapp" href="images/frontLoginScreen.jpg"><img style="max-width: 70%" src="images/frontLoginScreen.jpg"></a>
-                  </div>
-                  <div class="col s6">
-                      <a data-fancybox="gallery_gcapp" href="images/homeScreen.png"><img style="max-width: 70%" src="images/homeScreen.png"></a>
-                  </div>
+          <div class="modalContainers">
+            <h4 class="hr">Social Media Community Application</h4>
+              <div class="row">
+                <div class="col s4">
+                    <a data-fancybox="gallery_gcapp" href="images/frontLoginScreen.jpg" data-caption="Front Login Screen"><img src="images/frontLoginScreen.jpg" id="internalGifDemos"></a>
+                </div>
+                <div class="col s4">
+                    <a data-fancybox="gallery_gcapp" href="images/homeScreen.png" data-caption="Home Screen"><img src="images/homeScreen.png" id="internalGifDemos"></a>
+                </div>
+                <div class="col s4">
+                    <a data-fancybox="gallery_gcapp" href="images/PrayerList.png" data-caption="Prayer List Screen"><img src="images/PrayerList.png" id="internalGifDemos"></a>
+                </div>
               </div>
-            </div>
-            <div class="modalContainers">
-                <p>
-                A mobile application developed to provide administrative tools for small christian community members.
-                Built with React Native, expo and data stored on firebase.
-                <br><br>
-                (View project repository <a href="https://github.com/relientm96/gcapp" target="_blank"> here </a>)
-                <br><br>
-                Features:<br>
-                • Allow for Event Organization<br> 
-                • Allows users to manage a Prayer List<br>
-                • Leaders able to update Weekly Studies<br>
-                </p>
-            </div>
-          </p>
+              <div class="modalContainers">
+                  <p>
+                  A mobile application developed to provide administrative tools for small christian community members.
+                  <br><br>
+                  (View project repository <a href="https://github.com/relientm96/gcapp" target="_blank"> here </a>)
+                  <br><br>
+                  Utilized:<br>
+                  • React Native as the framework.<br> 
+                  • RESTAPI calls to Firebase backend using fetch api.<br>
+                  • Expo to easily deploy onto mobile device.<br>
+                  <br>
+                  Features:<br>
+                  • Event view for event organization.<br> 
+                  • Allows groups to upload/manage prayers to a prayer list.<br>
+                  • Enable leaders to upload new weekly studies easily.<br>
+                  </p>
+              </div>
+            </p>
+          </div>
       </div>
   </div>
 
@@ -564,27 +597,22 @@
           <div class="modalContainers">
           <h4 class="hr">Seven Segment on Web</h4>
               <p>
-                <div id="modalGospelCommunityApp">
-                  <div class="row center-align">
-                    <div class="col s6">
-                        <a data-fancybox="arduino_gallery" href="images/arduinoWebInterface.JPG"><img style="max-height: 50%" src="images/arduinoWebInterface.JPG" id="internalGifDemos"></a>
-                    </div>
-                    <div class="col s6">
-                        <a data-fancybox="arduino_gallery" href="images/esp8266.jpg"><img style="max-width:60%;"src="images/esp8266.jpg" id="internalGifDemos"></a>
-                    </div>
+                  <div style="text-align: center;">
+                    <a data-fancybox="arduino_gallery" href="images/arduinoWebInterface.JPG"><img src="images/arduinoWebInterface.JPG" id="internalGifDemos"></a>
                   </div>
-                </div>
                 <br>
-                 An arduino based project that allows Seven Segment Digit control over Web. <br>
-                 The ESP8266 is used as a Web Server that sends our a html webpage for user interaction. <br>
-                 The Arduino UNO is used to collect received data from the ESP8266 and displays the number onto double seven segment display.
+                 An arduino based project that allows for Seven Segment Digit control over a Web interface. <br>
+                 The ESP8266 is used as a Web Server that sends out a html webpage for user interaction. <br>
+                 The Arduino UNO is used to collect received serial data (transmitted through UART) 
+                 from the ESP8266 and displays the number onto the double digit seven segment display.
                 <br><br>
                 (View project repository <a href="https://github.com/relientm96/SevenSegment" target="_blank"> here </a>)
                 <br><br>
                 Modes Available:<br>
-                • Potentiometer Mode: Control number to display by potentiometer.<br>
-                • Auto Counter: Automatically increments from 0-99 and displays it.<br>
-                • Web Server Control: Web Control by displaying the given input number on Web Interface.<br>
+                • Potentiometer Mode: Control number to display by reading analog pin connected to Potentiometer.<br>
+                • Auto Counter: Arduino automatically increments from 0-99 and displays it.<br>
+                • Web Server Control: Utilizes the input number on Web Interface which it sent to the ESP8266 
+                followed by the UNO for display.<br>
               </p>
           </div>
         </div>
@@ -597,18 +625,20 @@
             <h4 class="hr">Shadow Blocks Game</h4>
                 <p>
                   <div class="container">
-                      <a data-fancybox href="images/shadowBlockDemo.gif"><img src="images/shadowBlockDemo.gif" id="internalGifDemos"></a>
+                    <a data-fancybox href="images/shadowBlockDemo.gif"><img src="images/shadowBlockDemo.gif" id="internalGifDemos"></a>
                   </div>
                   <br>
                    An Object Oriented based game designed using Java and Slick2D Graphical Libraries.<br>
-                   Levels are made by using csv files to store sprite name to render, x coordinate and y coordinate.
+                   Levels are made using csv files to store each row with the 
+                   sprite name to render, x coordinate and y coordinate.
+                   Game sprites are created using a factory design pattern. 
                   <br><br>
                   (View project repository <a href="https://github.com/relientm96/ShadowBlocks" target="_blank"> here </a>)
                   <br><br>
                   Features:<br>
-                  • Many fun actions on different levels.<br>
+                  • Different player actions for each level.<br>
                   • 20 Levels of Challenging Puzzles to Solve.<br>
-                  • Built on Java and Slick2D for graphics.<br>
+                  • Built on Java and Slick2D (Java 2D game library).<br>
                 </p>
             </div>
           </div>

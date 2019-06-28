@@ -119,7 +119,7 @@ nav.nav-center ul li a {
 }
 
 .modal {
-  width: 60% !important ;
+  width: 70% !important ;
   height: 80% !important ; 
 }
 
@@ -184,7 +184,7 @@ nav.nav-center ul li a {
 #modalGospelCommunityApp{
   margin: 0 auto;
   max-width: 100%;
-  width: 90%;
+  height: 50%;
 }
 
 .table {
