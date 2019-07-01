@@ -7,7 +7,9 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.slider').slider({
 		full_width: true, 
-		height:475,
+    height: 475,
+    interval: 8500,
+    duration: 750,
 		});
 });
 
@@ -15,7 +17,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.modal').modal({
     opacity: 0.3,
-    inDuration: 650,
+    inDuration: 600,
     outDuration: 650,
   });
 });
@@ -29,9 +31,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
   });
 });
-
-//Fade in for cards
-$( ".card" ).fadeIn(3000);
 
 //Scroll to top button behaviour
 jQuery(document).ready(function() {
