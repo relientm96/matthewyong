@@ -289,8 +289,9 @@ p.aboutMeMain{
 
 #BackToTopButton {
   display: inline-block;
-  background-color: #1a237e;
-  width: 50px;
+  background-color: #232325;
+  color: white;
+  width: 100px;
   height: 50px;
   text-align: center;
   border-radius: 4px;
@@ -309,7 +310,7 @@ p.aboutMeMain{
   font-weight: normal;
   font-style: normal;
   font-size: 2em;
-  line-height: 50px;
+  line-height: 20px;
   color: #fff;
 }
 #BackToTopButton:hover {
