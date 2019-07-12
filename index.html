@@ -14,13 +14,24 @@
 
 <body>
 
-  <a id="BackToTopButton"><div>Back To Top</div></a>
+  <div id="floatingNavBtn" class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating blue darken" href="#aboutMeSection">
+        <i class="material-icons">person</i></a>
+      </li>
+      <li><a class="btn-floating yellow darken-3" href="#educationSection"><i class="material-icons">school</i></a></li>
+      <li><a class="btn-floating green" href="#projectSection"><i class="material-icons">build</i></a></li>
+      <li><a class="btn-floating red darken-4" href="#workSection"><i class="material-icons">work</i></a></li>
+      <li><a class="btn-floating indigo lighten-2" href="#parallaxBannerID"><i class="material-icons">arrow_upward</i></a></li>
+    </ul>
+  </div>
 
-  <div class="row">
-    <div class="nopaddingbanner col s12">
-      <div id="index-banner" class="parallax-container">
-          <div class="section no-pad-bot">
-              <div class="container">
+      <div id="parallaxBannerID" class="parallax-container">
+          <div class="section no-pad-bot no-pad-">
+              <div id="bannerText" class="container">
                   <br><br>
                   <h1 class="header center white-text text-lighten-2">Matthew Yong</h1>
                   <div class="row center">
@@ -28,22 +39,22 @@
                     <h5 class="header col s12 white-text">University of Melbourne</h5>
                   </div>
                   <div class="row center">
-                    <a href="#aboutMeSection" class="btn-large waves-effect waves-light indigo accent-2">About Me</a>
+                    <a class="waves-effect waves-light btn-large blue darken-2" href="#aboutMeSection">
+                      View More</a>
                   </div>
                   <br><br>
-                </div>
+              </div>
           </div>
           <div class="parallax">
-              <img src="images/titleBackground.jpg" class="mainBackgroundImage" alt="">
-            </div>
+            <img src="images/titleBackground.jpg" class="mainBackgroundImage">
+          </div>
       </div>
-    </div>
-  </div>
+
+  <!--
 
   <div class="container">
     <div class="section">
 
-      <!--   Section with Icons   -->
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
@@ -53,7 +64,7 @@
           </div>
           <div class="row center">
               <a href="#educationSection" class="btn-large waves-effect waves-light indigo darken-4">View</a>
-            </div>
+          </div>
         </div>
 
         <div class="col s12 m4">
@@ -82,18 +93,20 @@
     </div>
     <br><br>
   </div>
+  -->
 
   <div class="divider"></div>
 
   <div style="background-color: #D8D8D8">
     <div style="padding-left: 50px;padding-right: 50px"  >
         <div class="section" id="aboutMeSection">
+
           <h3 style="text-align: center">About Me<i style="padding-left: 10px; font-size:40px; position:relative;top:5px;" class="material-icons">person</i></h3>
-          <br>
+
           <div class="row section-content">
     
             <div class="col s12 m4 l4">
-              <figure>
+              <figure class="hoverable">
                 <img src="images/profilePic.jpg" id="profilePic">
                 <div class="container">
                     <div class="row">
@@ -114,7 +127,7 @@
             <div class="col s12 m4 l4">
               <div class="aboutMecontainers">
                 <div style="position: relative;">
-                  <div class="card">
+                  <div class="card hoverable">
                     <div class="card-content">
                     <div class="card-title>">
                         <h5 class="hr" style="font-size:24px;">Hi there!</h5><i style="padding-left: 10px;position:relative;font-size:35px; top:10px;" class="material-icons">person_pin</i>
@@ -122,7 +135,7 @@
                       <p class="aboutMeMain">                      
                         I love to build awesome software or electronics to learn! <br><br>
                         In my spare time, I have developed projects including 
-                        <b>Web</b> (front and back end) and <b>Mobile</b> Applications, <b>Cloud</b> Deployment,
+                        <b>Full Stack Web</b> and <b>Mobile</b> Applications, <b>Cloud</b> Deployment,
                         <b>Object Oriented</b> games and <b>embedded electronics</b> which can all be viewed 
                         <a href="#projectSection">here</a>!
                         <br><br>
@@ -141,7 +154,7 @@
             <div class="col s12 m4 l4">
               <div class="aboutMecontainers">
 
-                    <div style="text-align: center;" class="card">
+                    <div style="text-align: center;" class="card hoverable">
                         <div class="card-content">
                         <div class="card-title>">
                             <h5 class="hr">Skills at a Glance </h5>
@@ -186,7 +199,7 @@
                       </div>
                 </div>
 
-                <div style="text-align:center;" class="card">
+                <div style="text-align:center;" class="card hoverable">
                   <div class="card-content">
                     <div class="row">
                       <div class="col s12">
@@ -211,10 +224,11 @@
 
     <div class="container">
         <div class="section" id="educationSection">
-          <h3>Education <i class="material-icons" style="font-size: 35px;position:relative;top:5px;">school</i></h3>
+          <h3 style="text-align: center">Education <i class="material-icons" style="font-size: 35px;position:relative;top:5px;">school</i></h3>
+             
           <div class="section">
 
-            <div class="card">
+            <div class="card hoverable">
               <div class="card-content">
                 <span class="card-title">
                   <h5 class="hr"> University of Melbourne</h5>
@@ -242,7 +256,7 @@
               </div>
             </div>
           
-            <div class="card">
+            <div class="card hoverable">
               <div class="card-content">
                 <span class="card-title">
                     <h5 class="hr"> University of Melbourne </h5>
@@ -280,6 +294,8 @@
     <div style="background-color: #D8D8D8;padding-left: 30px;padding-right: 30px">
         <div class="section" id="projectSection">
           <h3 style="text-align: center;">Projects<i class="material-icons" style="padding-left:15px;font-size: 35px; position:relative; top:2px;">build</i></h3>
+
+          <br>
           <div class="slider">
               <ul class="slides">
                 <li>
@@ -340,10 +356,40 @@
     <div class="container">
         <div class="section" id="workSection">
           <h3 style="text-align:center;">Work Experience<i class="material-icons" style="padding-left: 10px;font-size: 35px; position:relative;top:4px;">work</i></h3>
+          
           <div class="section">
 
             <div class="container">
-                <div class="card">
+              <div class="card hoverable">
+                <div class="card-content">
+                  <span class="card-title">
+                      <h5 class="hr"> University of Melbourne </h5>
+                  </span>
+                  <h6> Research Assistant </h6>
+                  <h6>June 2019 - July 2019</h6>
+                  <br>
+                  <p>
+                      <h6><b>Spatially Adaptive Photographic System</b></h6>
+                      This electronic system provides a solution to shadows in potrait photographs by 
+                      dynamically adjusting LEDs on an LED matrix using image processing algorithms.
+                      <br><br>
+                      Throughout development, I have:<br>
+                      • Implemented TCP socket communication between python server and C++ client.<br>
+                      • Integrated communication between python and C++ modules using TCP sockets.<br>
+                      • Designed a caching mechanism for sensor values using multi-processing.<br>
+                      • Created consistent log debugging formatting information to console.<br>
+                      • Utilized:
+                      C/C++,
+                      Python,
+                      Linux,
+                      Git,
+                      Socket Programming.<br>
+                  </div>
+              </div>
+            </div>
+
+            <div class="container">
+                <div class="card hoverable">
                   <div class="card-content">
                     <span class="card-title">
                         <h5 class="hr"> University of Melbourne </h5>
@@ -356,7 +402,7 @@
                         The EMU Robot provides mechanical assistance to patients undergoing limb rehabilitation using 
                         gravity compensation techniques. I worked on improving the robot's back wheel design.
                         <br><br>
-                        Throughout my research experience:<br>
+                        Throughout my research experience, I have:<br>
                         • Minimized mechanical costs to about 20% with new proposed design.<br>
                         • Gained robotic research experience in proposing, building and testing robotic parts.<br>
                         • Collaborated & presented ideas to supervisors, getting feedback on designs. <br>
@@ -373,7 +419,7 @@
             </div>
 
             <div class="container">
-              <div class="card">
+              <div class="card hoverable">
                 <div class="card-content">
                   <span class="card-title">
                       <h5 class="hr"> myBurgerLab </h5>
@@ -395,6 +441,18 @@
           </div>
 
           </div>
+
+          <div class="buttonNavi">
+            <div class="btn-group">
+                <a style="text-align: center" class="waves-effect waves-light btn indigo darken-2" href="#parallaxBannerID">
+                  Back to Top
+                </a>              
+                <a style="text-align: center" class="waves-effect waves-light btn indigo darken-2 modal-trigger" href="#aboutSiteModal">
+                  About Site
+                </a>
+            </div>
+          </div>
+
          </div>
         </div>
     </div>
@@ -402,11 +460,15 @@
   <footer class="page-footer grey darken-4">
     <div class="container">
       <div class="row">
+
         <div class="col s12 m4 l3"> 
           <h5 class="white-text">Contact Details</h5>
-          <p class="grey-text text-lighten-4">Mobile: +61452139664</p>
-          <p class="grey-text text-lighten-4">Email: matthewyfy@gmail.com</p>
+          <p class="grey-text text-lighten-4">
+          Mobile: +61452139664  <br>
+          Email: matthewyfy@gmail.com<br>
+          </p>
         </div>
+
       </div>
     </div>
 
@@ -430,8 +492,15 @@
   <div id="embeddedModal" class="modal">
     <div class="modal-content" inDuration="400">
         <div class="modalContainers">
-          <h4 class="hr" style="text-align: center">Embedded Game Console</h4>
+          <h4 class="hr">Embedded Game Console</h4>
           <p>
+
+            <div class="container" style="text-align: center;">
+              <a data-fancybox="gallery_pcb" href="images/flappybirdexp.gif" data-caption="Flappy Bird game demo"><img src="images/flappybirdexp.gif" id="internalGifDemos"></a>
+              <h6> Flappy Bird Demo</h6>
+            </div>
+
+            <!--
               <div class = "row">
                 <div class = "col s6">
                   <a data-fancybox="gallery_pcb" href="images/flappybirdexp.gif" data-caption="Flappy Bird game demo"><img src="images/flappybirdexp.gif" id="internalGifDemos"></a>
@@ -448,8 +517,10 @@
                     <a data-fancybox="gallery_pcb" href="images/pcbLayout3d.JPG" data-caption="3D PCB Layout on Altium Designer"><img src="images/pcbLayout3d.JPG" id="internalGifDemos"></a>
                   </div>
               </div>
-              <br><br>
-              Project involving the design and development of a game boy electronic embedded system. 
+              -->
+
+              <br>
+              Project involving the design and development of a game console electronic embedded system. 
               Altium Designer was used to design the Printed Circuit Board (PCB) and 
               AVR Studio to program the ATMEGA-16 micro-controller in C. 
               <br><br>
@@ -470,6 +541,19 @@
               • Battery level detector using Analog to Digital Conversion. <br>
               • Serial Peripheral Interface(SPI) and bit banging communication between micro-controller to LCD. <br>
               <br>
+
+              <div class="divider"></div> 
+              <br>
+
+              <div class="container" style="text-align: center;">
+                  <a data-fancybox="gallery_pcb" href="images/pongDemo.gif" data-caption="Pong Game Demo"><img src="images/pongDemo.gif" id="internalGifDemos"></a>
+                  <h6> Pong Game Demo</h6>
+                  <a data-fancybox="gallery_pcb" href="images/pwmBrightness.gif" data-caption="Changing brightness using PWM"><img src="images/pwmBrightness.gif" id="internalGifDemos"></a>
+                  <h6> Brightness Control</h6>
+                  <a data-fancybox="gallery_pcb" href="images/pcbLayout3d.JPG" data-caption="3D PCB Layout on Altium Designer"><img src="images/pcbLayout3d.JPG" id="internalGifDemos"></a>
+                  <h6> 3D PCB Design</h6>
+                </div>
+
             </p>
         </div>
     </div>
@@ -481,6 +565,13 @@
         <div class="modalContainers">
           <h4 class="hr">Tweet Analysis Cloud Web Application</h4>
             <p>
+
+              <div class="container" style="text-align: center;">
+                  <a data-fancybox="gallery_Cloud" href="images/webSiteDemo.gif" data-caption="Sample demo of the application"><img src="images/webSiteDemo.gif" id="internalGifDemos"></a>
+                  <h5><a href="http://45.113.235.192/app" target="_blank">Take a look here!</a></h5>
+              </div>
+
+              <!--
               <div class="row">
                   <div class="col s6">
                     <a data-fancybox="gallery_Cloud" href="images/webSiteDemo.gif" data-caption="Sample demo of the application"><img src="images/webSiteDemo.gif" id="internalGifDemos"></a>
@@ -491,6 +582,8 @@
                   <br>
                   <h5 style="text-align:center;"><a href="http://45.113.235.192/app" target="_blank">Take a look here!</a></h5>
               </div>
+              -->
+
               <br>
               This application was made to explore the amount of wrathful, lazy, greedy or lustful
               tweets in Australia. 
@@ -510,15 +603,24 @@
               • Linux operating system command tools and environment (Ubuntu 18.04). <br>
               • Apache2 as the HTTP server which proxies requests to the web application. <br>
               <br>
-                <h6><u>Diagram of System Architecture</u></h6>
-                <br>
-                <div class="modalContainers">
-                    <a data-fancybox href="images/systemarchitecture.png">
-                      <div class="container">
-                          <img width="90%" src="images/systemarchitecture.png">
-                      </div>
-                    </a>
+
+              <div class="divider"></div>
+                <div class="container" style="text-align:center">
+                  
+                  <h6><u>Diagram of System Architecture</u></h6>
+                  <br>
+                      <a data-fancybox href="images/systemarchitecture.png">
+                        <div class="container">
+                            <img width="100%" src="images/systemarchitecture.png">
+                        </div>
+                      </a>
+                    <h6><u>Presentation on System Design and Deployment Demonstration</u></h6>
+                    <a data-fancybox="gallery_Cloud" href="http://www.youtube.com/watch?v=Mtsm-FB_oQE&t=3m52s" data-caption="My Presentation on System Design and Ansible Deployment Demo"><img src="images/youtubeDemo.jpg" id="internalGifDemos"></a>
+                    <div class="divider"></div>
+                    <br>
+
                 </div>
+
             </p>
         </div>
     </div>
@@ -535,10 +637,10 @@
                   <h5><a href="http://13.229.230.199/" target="_blank">Try it here!</a></h5>
               </div>
               <br><br>
-              Self made online C Code integrated development environment web application where
-              users can log on to run C programs. Backend server created using C++ and deployed 
-              onto a Windows 2019 Server instance on the AWS cloud.
-              Simple code samples are provided for users.
+              Made a Full Stack online C Code integrated development environment web application where
+              users can log on to run C programs. Backend server created using C++ and POCO C++ Libraries
+              and deployed onto an EC2 Windows server instance on the AWS cloud.
+              Simple code samples are also provided to users.
               <br><br>
               (View project repository <a href="https://github.com/relientm96/online_code_editor" target="_blank"> here </a>)
               <br><br>
@@ -549,10 +651,10 @@
               • Registration feature for users<br>
               <br>
               Utilized:<br>
-              • RESTAPI calls to backend and handling of JSON payload. <br>
               • POCO C++ Libraries<br>
               • CodeMirror as code editor<br>
-              • HTML, CSS, Javascript and Bootstrap for front end design<br>
+              • HTML, CSS, Javascript and Bootstrap for front end web design<br>
+              • RESTAPI calls to backend and handling of JSON payload. <br>
             </p>
         </div>
       </div>
@@ -627,23 +729,40 @@
       <div id="gameModal" class="modal">
           <div class="modal-content">
             <div class="modalContainers">
-            <h4 class="hr">Shadow Blocks Game</h4>
-                <p>
-                  <div class="container">
-                    <a data-fancybox href="images/shadowBlockDemo.gif"><img src="images/shadowBlockDemo.gif" id="internalGifDemos"></a>
-                  </div>
-                  <br>
-                   An Object Oriented based game designed using Java and Slick2D Graphical Libraries.<br>
-                   Levels are made using csv files to store each row with the 
-                   sprite name to render, x coordinate and y coordinate.
-                   Game sprites are created using a factory design pattern. 
-                  <br><br>
-                  (View project repository <a href="https://github.com/relientm96/ShadowBlocks" target="_blank"> here </a>)
-                  <br><br>
-                  Features:<br>
-                  • Different player actions for each level.<br>
-                  • 20 Levels of Challenging Puzzles to Solve.<br>
-                  • Built on Java and Slick2D (Java 2D game library).<br>
+              <h4 class="hr">Shadow Blocks Game</h4>
+              <p>
+                <div class="container">
+                  <a data-fancybox href="images/shadowBlockDemo.gif"><img src="images/shadowBlockDemo.gif" id="internalGifDemos"></a>
+                </div>
+                <br>
+                  An Object Oriented based game designed using Java and Slick2D Graphical Libraries.<br>
+                  Levels are made using csv files to store each row with the 
+                  sprite name to render, x coordinate and y coordinate.
+                  Game sprites are created using a factory design pattern. 
+                <br><br>
+                (View project repository <a href="https://github.com/relientm96/ShadowBlocks" target="_blank"> here </a>)
+                <br><br>
+                Features:<br>
+                • Different player actions for each level.<br>
+                • 20 Levels of Challenging Puzzles to Solve.<br>
+                • Built on Java and Slick2D (Java 2D game library).<br>
+              </p>
+            </div>
+          </div>
+      </div>
+
+
+      <!-- About Site Modal -->
+      <div id="aboutSiteModal" class="modal">
+          <div class="modal-content">
+            <div class="modalContainers">
+            <h3 class="hr">About this Site</h3>
+                <p class="flow-text">
+                  This site was built to leverage my knowledge in Front End web design
+                  using HTML, CSS, Javascript. <br>
+                  Built using <a href="https://materializecss.com/" target="_blank">Materialize</a>, 
+                  a modern responsive CSS framework. <br>
+                  Hosted on Github pages <a href="https://github.com/relientm96/matthewyong" target="_blank">(Link to Repository)</a>.
                 </p>
             </div>
           </div>

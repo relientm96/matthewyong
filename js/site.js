@@ -1,25 +1,27 @@
-//For Parallax Effect
-$(document).ready(function(){
-  $('.parallax').parallax();
-});
+/*To Load Materialize/Website Components*/
 
-//For Slider Initialization
 $(document).ready(function(){
+  //Parallax Initialization
+  $('.parallax').parallax();
+  //Floating Button Initialization
+  $('.fixed-action-btn').floatingActionButton({
+    direction: 'top',
+    hoverEnabled: false,
+  });
+  //Slider Initialization and Configurations
   $('.slider').slider({
 		full_width: true, 
     height: 475,
     interval: 8500,
     duration: 750,
-		});
-});
-
-//For Modal PopUps
-$(document).ready(function(){
+    });
+  //Modal Initialization and Configurations  
   $('.modal').modal({
     opacity: 0.3,
     inDuration: 600,
     outDuration: 650,
   });
+
 });
 
 //For Smooth Scrolling to anchor
@@ -32,6 +34,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+/*
 //Scroll to top button behaviour
 jQuery(document).ready(function() {
   
@@ -53,4 +56,4 @@ jQuery(document).ready(function() {
   });
     
 });
-
+*/

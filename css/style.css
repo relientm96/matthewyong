@@ -287,40 +287,13 @@ p.aboutMeMain{
   padding-left: 4px;
 }
 
-#BackToTopButton {
-  display: inline-block;
-  background-color: #232325;
-  color: white;
-  width: 100px;
-  height: 50px;
+.buttonNavi{
   text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
 }
-#BackToTopButton::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 20px;
-  color: #fff;
-}
-#BackToTopButton:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-#BackToTopButton:active {
-  background-color: #555;
-}
-#BackToTopButton.show {
-  opacity: 1;
-  visibility: visible;
+
+#bannerText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
