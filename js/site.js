@@ -14,12 +14,12 @@ $(document).ready(function(){
     height: 475,
     interval: 8500,
     duration: 750,
-    });
+  });
   //Modal Initialization and Configurations  
   $('.modal').modal({
     opacity: 0.3,
-    inDuration: 600,
-    outDuration: 650,
+    inDuration: 400,
+    outDuration: 570,
   });
 
 });
