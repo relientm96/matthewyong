@@ -13,7 +13,7 @@ $(document).ready(function(){
   $('.slider').slider({
 		full_width: true, 
     height: 475,
-    interval: 8500, //original 8500
+    interval: 5000, //original 8500
     duration: 750,
   });
   
@@ -23,6 +23,12 @@ $(document).ready(function(){
 
   $('.slider').waypoint(function() {
     $('.slider').slider('start');
+  });
+
+  $(window).on('hashchange',function(){ 
+    if(window.location.href.includes("projectSection")){
+      $('.slider').slider('start');
+    }
   });
 
   //Modal Initialization and Configurations  
