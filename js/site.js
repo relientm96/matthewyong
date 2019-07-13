@@ -8,13 +8,23 @@ $(document).ready(function(){
     direction: 'top',
     hoverEnabled: false,
   });
+  
   //Slider Initialization and Configurations
   $('.slider').slider({
 		full_width: true, 
     height: 475,
-    interval: 8500,
+    interval: 8500, //original 8500
     duration: 750,
   });
+  
+  $('.slider').ready(function(){
+    $('.slider').slider('pause');
+  })
+
+  $('.slider').waypoint(function() {
+    $('.slider').slider('start');
+  });
+
   //Modal Initialization and Configurations  
   $('.modal').modal({
     opacity: 0.3,
@@ -34,26 +44,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-/*
-//Scroll to top button behaviour
-jQuery(document).ready(function() {
-  
-  var btn = $('#BackToTopButton');
-
-  //Display hover button once we enter aboutMe section
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > 350) {
-      btn.addClass('show');
-    } else {
-      btn.removeClass('show');
-    }
-  });
-  
-  //Animate scroll to top effect when clicked
-  btn.on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({scrollTop:250}, '200');
-  });
-    
-});
-*/
