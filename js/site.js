@@ -13,22 +13,23 @@ $(document).ready(function(){
   $('.slider').slider({
 		full_width: true, 
     height: 475,
-    interval: 5000, //original 8500
+    interval: 5000, 
     duration: 750,
+  });
+
+  $(window).on('hashchange',function(){ 
+    if(window.location.href.includes("projectSection")) {
+      $('.slider').slider('start');
+    }
   });
   
   $('.slider').ready(function(){
     $('.slider').slider('pause');
   })
 
-  $('.slider').waypoint(function() {
+  $('#projectSection').waypoint(function() {
+    console.log("Test");
     $('.slider').slider('start');
-  });
-
-  $(window).on('hashchange',function(){ 
-    if(window.location.href.includes("projectSection")){
-      $('.slider').slider('start');
-    }
   });
 
   //Modal Initialization and Configurations  
