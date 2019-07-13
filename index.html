@@ -323,6 +323,14 @@
                   </div>
                 </li>
                 <li>
+                  <img src="images/marioSide.jpg" id="marioGif"> 
+                  <div class="caption center-align">
+                    <h3 class="light grey-text text-lighten-3">Online Greenhouse Manager</h3>
+                    <h5 class="light grey-text text-lighten-3">IoT and Web Greenhouse Management System</h5>
+                    <a class="waves-effect waves-light btn modal-trigger" href="#marioModal">See More</a>
+                  </div>
+                </li>
+                <li>
                     <img src="images/onlineCodeEditorDemo.gif" id="codeGif">
                     <div class="caption right-align">
                       <h3>Online C Code Editor</h3>
@@ -640,8 +648,8 @@
         <div class="modalContainers">
         <h4 class="hr">Online C Code Editor</h4>
             <p>
-              <div style="text-align: center;">
-                  <a data-fancybox href="images/onlineCodeEditorDemo.gif" data-caption="Sample demonstration of application"><img src="images/onlineCodeEditorDemo.gif"></a>
+              <div class="container" style="text-align: center;">
+                  <a data-fancybox href="images/onlineCodeEditorDemo.gif" data-caption="Sample demonstration of application"><img src="images/onlineCodeEditorDemo.gif" id="internalGifDemos"></a>
                   <h5><a href="http://13.229.230.199/" target="_blank">Try it here!</a></h5>
               </div>
               <br><br>
@@ -681,7 +689,7 @@
                     <a data-fancybox="gallery_gcapp" href="images/homeScreen.png" data-caption="Home Screen"><img src="images/homeScreen.png" id="internalGifDemos"></a>
                 </div>
                 <div class="col s4">
-                    <a data-fancybox="gallery_gcapp" href="images/PrayerList.png" data-caption="Prayer List Screen"><img src="images/PrayerList.png" id="internalGifDemos"></a>
+                    <a data-fancybox="gallery_gcapp" href="images/UserProfile.png" data-caption="Prayer List Screen"><img src="images/PrayerList.png" id="internalGifDemos"></a>
                 </div>
               </div>
               <div class="modalContainers">
@@ -758,6 +766,49 @@
             </div>
           </div>
       </div>
+
+      <!-- Mario Modal -->
+      <div id="marioModal" class="modal">
+        <div class="modal-content">
+          <div class="modalContainers">
+          <h4 class="hr">Online Greenhouse Mangement System</h4>
+          <div class="container" style="text-align:center">
+            <a gallery="mario_gallery" data-fancybox href="images/MarioDemo.mp4" data-caption="Alarm Demonstration of System"><img src="images/mariodemoimg.jpg" id="internalGifDemos">
+            </a>
+            <h6>Alarm Demo</h6>
+            <a gallery="mario_gallery" data-fancybox href="images/marioWebDemo.mp4" data-caption="Application Demonstration"><img src="images/mariowebimg.jpg" id="internalGifDemos">
+            <h5><a href="http://18.139.115.251" target="_blank">Have a Look Here!</a></h5>
+          </div>
+              <p>
+                This project was built to manage or control remote sensors using an online web application interface.
+                on the cloud. Web application client polls the ESP8266 Sensor Server to get live sensor data.
+                ESP8266 server configured using ESP8266's Web Server Libraries and Arduino IDE.
+                <br><br>
+                (View project repository <a href="https://github.com/relientm96/plantHumidity" target="_blank"> here </a>)
+                <br><br>
+                Features:<br>
+                • Online web interface that lets user track live sensor data.<br>
+                • Alarm on device when an object approaches close to the device.<br>
+                • Piezo Buzzer that plays the Mario theme or the Pirates of the Caribbean theme.<br>                
+                <br>
+                Web Application is deployed onto an Ubuntu EC2 AWS instance and is designed using: <br>
+                • Express Backend.<br>
+                • CouchDB Database.<br>
+                • HTML, CSS, Javascript and JQuery.<br>
+                • Materialize as CSS framework in user interface design.<br>
+                <br>
+              </p>
+              <div class="container" style="text-align:center">
+                  <a gallery="mario_gallery" data-fancybox href="images/MarioSide.jpg" data-caption="Side View of Device"><img src="images/MarioSide.jpg" id="internalGifDemos">
+                  </a>
+                  <h6>Side View of Device</h6>
+                  <a gallery="mario_gallery" data-fancybox href="images/MarioTop.jpg" data-caption="Top View of Device"><img src="images/MarioTop.jpg" id="internalGifDemos">
+                  </a>
+                  <h6>Top view of Device</h6>
+                  </div>
+          </div>
+        </div>
+      </div>      
 
 
       <!-- About Site Modal -->
