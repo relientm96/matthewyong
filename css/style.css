@@ -122,10 +122,12 @@ nav.nav-center ul li a {
   filter: brightness(40%);
 }
 
+/*
 .modal {
-  width: 70% !important ;
-  height: 80% !important ; 
+  width: 100% !important ; 
+  height: 100% !important ; 
 }
+*/
 
 .mainBanner{
   align-content: center;

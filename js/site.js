@@ -13,7 +13,7 @@ $(document).ready(function(){
   $('.slider').slider({
 		full_width: true, 
     height: 475,
-    interval: 5000, 
+    interval: 6000, 
     duration: 750,
   });
 
@@ -25,7 +25,7 @@ $(document).ready(function(){
   
   $('.slider').ready(function(){
     $('.slider').slider('pause');
-  })
+  });
 
   $('#projectSection').waypoint(function() {
     console.log("Test");
@@ -34,9 +34,8 @@ $(document).ready(function(){
 
   //Modal Initialization and Configurations  
   $('.modal').modal({
-    opacity: 0.3,
     inDuration: 400,
-    outDuration: 570,
+    outDuration: 400,
   });
 
 });

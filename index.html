@@ -91,7 +91,7 @@
             <div class="col s12 m4 l4">
               <div class="aboutMecontainers">
                 <div style="position: relative;">
-                  <div class="card hoverable">
+                  <div id="profilePicIDCard" class="card hoverable">
                     <div class="card-content">
                     <div class="card-title>">
                         <h5 class="hr" style="font-size:24px;">Hi there!</h5><i style="padding-left: 10px;position:relative;font-size:35px; top:10px;" class="material-icons">person_pin</i>
@@ -287,8 +287,8 @@
                   </div>
                 </li>
                 <li>
-                  <img src="images/mariosideview.jpg" id="marioGif"> 
-                  <div class="caption center-align">
+                  <img src="images/marioDemo.gif" id="marioGif"> 
+                  <div class="caption right-align">
                     <h3 class="light grey-text text-lighten-3">Online Greenhouse Manager</h3>
                     <h5 class="light grey-text text-lighten-3">IoT and Web Greenhouse Management System</h5>
                     <a class="waves-effect waves-light btn modal-trigger" href="#marioModal">See More</a>
@@ -473,38 +473,17 @@
     <div class="modal-content" inDuration="400">
         <div class="modalContainers">
           <h4 class="hr">Embedded Game Console</h4>
-          <p>
+            <p>
 
             <div class="container" style="text-align: center;">
-              <a data-fancybox="gallery_pcb" href="images/flappybirdexp.gif" data-caption="Flappy Bird game demo"><img src="images/flappybirdexp.gif" id="internalGifDemos"></a>
               <h6> Flappy Bird Demo</h6>
+              <a data-fancybox="gallery_pcb" href="images/flappybirdexp.gif" data-caption="Flappy Bird game demo"><img src="images/flappybirdexp.gif" id="internalGifDemos"></a>
+              <h6>(View source code <a href="https://github.com/relientm96/gameconsole" target="_blank"> here </a>)</h6>
             </div>
-
-            <!--
-              <div class = "row">
-                <div class = "col s6">
-                  <a data-fancybox="gallery_pcb" href="images/flappybirdexp.gif" data-caption="Flappy Bird game demo"><img src="images/flappybirdexp.gif" id="internalGifDemos"></a>
-                </div>
-                <div class = "col s6">
-                  <a data-fancybox="gallery_pcb" href="images/pongDemo.gif" data-caption="Pong Game Demo"><img src="images/pongDemo.gif" id="internalGifDemos"></a>
-                </div>
-              </div>
-              <div class = "row">
-                  <div class = "col s6">
-                    <a data-fancybox="gallery_pcb" href="images/pwmBrightness.gif" data-caption="Changing brightness using PWM"><img src="images/pwmBrightness.gif" id="internalGifDemos"></a>
-                  </div>
-                  <div class = "col s6">
-                    <a data-fancybox="gallery_pcb" href="images/pcbLayout3d.JPG" data-caption="3D PCB Layout on Altium Designer"><img src="images/pcbLayout3d.JPG" id="internalGifDemos"></a>
-                  </div>
-              </div>
-              -->
-
               <br>
               Project involving the design and development of a game console electronic embedded system. 
               Altium Designer was used to design the Printed Circuit Board (PCB) and 
               AVR Studio to program the ATMEGA-16 micro-controller in C. 
-              <br><br>
-              (View source code <a href="https://github.com/relientm96/gameconsole" target="_blank"> here </a>)
               <br><br>
               Games Programmed:<br>
               • Flappy Bird (simplified)<br>
@@ -526,10 +505,14 @@
               <br>
 
               <div class="container" style="text-align: center;">
+                <h5>Feature Demos</h5>
+                <br>
                   <a data-fancybox="gallery_pcb" href="images/pongDemo.gif" data-caption="Pong Game Demo"><img src="images/pongDemo.gif" id="internalGifDemos"></a>
                   <h6> Pong Game Demo</h6>
+                  <br>
                   <a data-fancybox="gallery_pcb" href="images/pwmBrightness.gif" data-caption="Changing brightness using PWM"><img src="images/pwmBrightness.gif" id="internalGifDemos"></a>
                   <h6> Brightness Control</h6>
+                  <br>
                   <a data-fancybox="gallery_pcb" href="images/pcbLayout3d.JPG" data-caption="3D PCB Layout on Altium Designer"><img src="images/pcbLayout3d.JPG" id="internalGifDemos"></a>
                   <h6> 3D PCB Design</h6>
                 </div>
@@ -548,21 +531,9 @@
 
               <div class="container" style="text-align: center;">
                   <a data-fancybox="gallery_Cloud" href="images/webSiteDemo.gif" data-caption="Sample demo of the application"><img src="images/webSiteDemo.gif" id="internalGifDemos"></a>
-                  <h5><a href="http://45.113.235.192/app" target="_blank">Take a look here!</a></h5>
+                  <h6><a href="http://45.113.235.192/app" target="_blank">Try the Application Here!</a></h6>
+                  <h6>(View project repository <a href="https://github.com/relientm96/SinsOnTwitter" target="_blank"> here </a>)</h6>
               </div>
-
-              <!--
-              <div class="row">
-                  <div class="col s6">
-                    <a data-fancybox="gallery_Cloud" href="images/webSiteDemo.gif" data-caption="Sample demo of the application"><img src="images/webSiteDemo.gif" id="internalGifDemos"></a>
-                  </div>
-                  <div class="col s6">
-                    <a data-fancybox="gallery_Cloud" href="http://www.youtube.com/watch?v=Mtsm-FB_oQE&t=3m52s" data-caption="My Presentation on System Design and Ansible Deployment Demo"><img src="images/youtubeDemo.jpg" id="internalGifDemos"></a>
-                  </div>
-                  <br>
-                  <h5 style="text-align:center;"><a href="http://45.113.235.192/app" target="_blank">Take a look here!</a></h5>
-              </div>
-              -->
 
               <br>
               This application was made to explore the amount of wrathful, lazy, greedy or lustful
@@ -574,8 +545,6 @@
               • Tweets processed using sentiment analysis and word indexing. <br>
               • Hosted on a three Ubuntu based virtual machine cluster cloud system. 
               <br><br>
-              (View project repository <a href="https://github.com/relientm96/SinsOnTwitter" target="_blank"> here </a>)
-              <br><br>
               Utilized:<br>
               • Ansible for automated system deployment which includes cloud resource provisioning 
                 and Linux bash commands. <br>
@@ -586,17 +555,19 @@
 
               <div class="divider"></div>
                 <div class="container" style="text-align:center">
-                  
-                  <h6><u>Diagram of System Architecture</u></h6>
+                  <h5> Project Gallery </h5>
                   <br>
-                      <a data-fancybox href="images/systemarchitecture.png">
-                        <div class="container">
-                            <img width="100%" src="images/systemarchitecture.png">
-                        </div>
-                      </a>
-                    <h6><u>Presentation on System Design and Deployment Demonstration</u></h6>
-                    <a data-fancybox="gallery_Cloud" href="http://www.youtube.com/watch?v=Mtsm-FB_oQE&t=3m52s" data-caption="My Presentation on System Design and Ansible Deployment Demo"><img src="images/youtubeDemo.jpg" id="internalGifDemos"></a>
-                    <div class="divider"></div>
+                    <a data-fancybox="gallery_Cloud" data-caption="System Design Diagram" href="images/systemarchitecture.png">
+                      <div class="container">
+                          <img width="100%" src="images/systemarchitecture.png">
+                      </div>
+                    </a>
+                    <h6>Diagram of System Architecture</h6>
+                    <br>
+                    <a data-fancybox="gallery_Cloud" href="http://www.youtube.com/watch?v=Mtsm-FB_oQE&t=3m52s" data-caption="My Presentation on System Design and Ansible Deployment Demo">
+                      <img src="images/youtubeDemo.jpg" id="internalGifDemos">
+                    </a>
+                    <h6>Presentation on System Design and Deployment Demonstration</h6>
                     <br>
 
                 </div>
@@ -614,15 +585,14 @@
             <p>
               <div class="container" style="text-align: center;">
                   <a data-fancybox href="images/onlineCodeEditorDemo.gif" data-caption="Sample demonstration of application"><img src="images/onlineCodeEditorDemo.gif" id="internalGifDemos"></a>
-                  <h5><a href="http://13.229.230.199/" target="_blank">Try it here!</a></h5>
+                  <h5><a href="http://13.229.230.199/" target="_blank">Try application here!</a></h5>
+                  <h6>(View project repository <a href="https://github.com/relientm96/online_code_editor" target="_blank"> here </a>)</h6>
               </div>
-              <br><br>
+              <br>
               Made a Full Stack online C Code integrated development environment web application where
               users can log on to run C programs. Backend server created using C++ and POCO C++ Libraries
               and deployed onto an EC2 Windows server instance on the AWS cloud.
               Simple code samples are also provided to users.
-              <br><br>
-              (View project repository <a href="https://github.com/relientm96/online_code_editor" target="_blank"> here </a>)
               <br><br>
               Features: <br>
               • C++ Backend with GCC 6.3.0 C compiler<br>
@@ -645,22 +615,26 @@
       <div class="modal-content">
           <div class="modalContainers">
             <h4 class="hr">Social Media Community Application</h4>
-              <div class="row">
-                <div class="col s4">
-                    <a data-fancybox="gallery_gcapp" href="images/frontLoginScreen.jpg" data-caption="Front Login Screen"><img src="images/frontLoginScreen.jpg" id="internalGifDemos"></a>
+            <div class="modalContainers">
+                <div class="container" style="text-align: center;">
+                  <div class="row">
+                    <div class="col s4">
+                        <a data-fancybox="gallery_gcapp" href="images/frontLoginScreen.jpg" data-caption="Front Login Screen"><img src="images/frontLoginScreen.jpg" id="internalGifDemos"></a>
+                    </div>
+                    <div class="col s4">
+                        <a data-fancybox="gallery_gcapp" href="images/homeScreen.png" data-caption="Home Screen"><img src="images/homeScreen.png" id="internalGifDemos"></a>
+                    </div>
+                    <div class="col s4">
+                        <a data-fancybox="gallery_gcapp" href="images/UserProfile.png" data-caption="User Settings Screen"><img src="images/UserProfile.png" id="internalGifDemos"></a>
+                    </div>
+                  </div>
+                  <h6>(View project repository <a href="https://github.com/relientm96/gcapp" target="_blank"> here </a>)</h6>              
                 </div>
-                <div class="col s4">
-                    <a data-fancybox="gallery_gcapp" href="images/homeScreen.png" data-caption="Home Screen"><img src="images/homeScreen.png" id="internalGifDemos"></a>
-                </div>
-                <div class="col s4">
-                    <a data-fancybox="gallery_gcapp" href="images/UserProfile.png" data-caption="Prayer List Screen"><img src="images/PrayerList.png" id="internalGifDemos"></a>
-                </div>
-              </div>
-              <div class="modalContainers">
                   <p>
                   A mobile application developed to provide administrative tools for small christian community members.
-                  <br><br>
-                  (View project repository <a href="https://github.com/relientm96/gcapp" target="_blank"> here </a>)
+                  This project was built to teach myself React Native and get exposure to mobile app development.
+                  As it is still in development, application demo is only available through the Expo app. 
+                  (Refer to <a href="https://github.com/relientm96/gcapp/blob/develop/README.md" target="_blank">README GitHub</a> link for instructions).
                   <br><br>
                   Utilized:<br>
                   • React Native as the framework.<br> 
@@ -673,7 +647,6 @@
                   • Enable leaders to upload new weekly studies easily.<br>
                   </p>
               </div>
-            </p>
           </div>
       </div>
   </div>
@@ -737,11 +710,14 @@
           <div class="modalContainers">
           <h4 class="hr">Online Greenhouse Mangement System</h4>
           <div class="container" style="text-align:center">
+            <a data-fancybox="mario_gallery" href="images/marioWebDemo.mp4" data-caption="Application Demonstration"><img src="images/mariowebimg.jpg" id="internalGifDemos">
+            </a>
+            <h6>Application Demo</h6>
+            <br>
             <a data-fancybox="mario_gallery" href="images/MarioDemo.mp4" data-caption="Alarm Demonstration of System"><img src="images/mariodemoimg.jpg" id="internalGifDemos">
             </a>
             <h6>Alarm Demo</h6>
-            <a data-fancybox="mario_gallery" href="images/marioWebDemo.mp4" data-caption="Application Demonstration"><img src="images/mariowebimg.jpg" id="internalGifDemos">
-            <h5><a href="http://18.139.115.251" target="_blank">Have a Look Here!</a></h5>
+            <h5><a href="http://pollpots.dynalias.com" target="_blank">Try the Application!</a></h5>
           </div>
               <p>
                 This project was built to manage or control remote sensors using an online web application interface.
