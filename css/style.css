@@ -93,19 +93,19 @@ nav.nav-center ul li a {
 }
 
 #embeddedGif{
-  filter: brightness(55%);
+  filter: brightness(60%);
 }
 
 #clusterGif{
-  filter: brightness(25%);
+  filter: brightness(40%);
 }
 
 #marioGif{
-  filter: brightness(25%);
+  filter: brightness(55%);
 }
 
 #codeGif{
-  filter: brightness(40%);
+  filter: brightness(50%);
 }
 
 #mobileGif{
@@ -115,11 +115,11 @@ nav.nav-center ul li a {
 }
 
 #arduinoGif{
-  filter: brightness(30%);
+  filter: brightness(20%);
 }
 
 #gameGif{
-  filter: brightness(40%);
+  filter: brightness(50%);
 }
 
 /*
@@ -210,7 +210,7 @@ ul#horizontal-list {
   
 figure {
   display: inline-block;
-  margin: 10px; /* adjust as needed */
+  margin: 10px; 
 }
 
 figure img {
