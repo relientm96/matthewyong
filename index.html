@@ -16,6 +16,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <script src="js/easy-waypoint-animate.js"></script>
 
 </head>
 
@@ -35,18 +37,18 @@
       <li><a class="btn-floating indigo lighten-2" href="#parallaxBannerID"><i class="material-icons">arrow_upward</i></a></li>
     </ul>
   </div>
-
+      <!---
       <div id="parallaxBannerID" class="parallax-container">
           <div class="section no-pad-bot no-pad-">
               <div id="bannerText" class="container">
                   <br><br>
-                  <h1 class="header center white-text text-lighten-2">Matthew Yong</h1>
+                  <h1 class="header center white-text text-lighten-1 animated fadeInUp delay-1s">Matthew Yong</h1>
                   <div class="row center">
-                    <h5 class="header col s12 white-text">Graduate Electrical Engineering Student</h5>
-                    <h5 class="header col s12 white-text">University of Melbourne</h5>
+                    <h5 class="header col s12 white-text animated fadeInLeft delay-2s">Graduate Electrical Engineering Student</h5>
+                    <h5 class="header col s12 white-text animated fadeInRight delay-2s">University of Melbourne</h5>
                   </div>
                   <div class="row center">
-                    <a class="waves-effect waves-light btn-large blue darken-2" href="#aboutMeSection">
+                    <a class="waves-effect waves-light btn-large blue darken-2 animated fadeInLeft delay-3s" href="#aboutMeSection">
                       View More</a>
                   </div>
                   <br><br>
@@ -56,10 +58,31 @@
             <img src="images/titleBackground.jpg" class="mainBackgroundImage">
           </div>
       </div>
+    -->
+
+  <div id="parallaxBannerID" class="parallax-container">
+    <section class="mainBackgroundImage"></section>
+    <div class="section no-pad-bot no-pad-top">
+      <div class="mainBackgroundImage">
+        <div class="bannertext-wrapper">
+            <h1 class="header center white-text text-lighten-1 ez-animate" data-animation="fadeInUp" data-animation-delay="0.5s">Matthew Yong</h1>
+            <div class="row center">
+              <h5 class="header col s12 white-text ez-animate" data-animation="fadeInLeft" data-animation-delay="1.0s">Graduate Electrical Engineering Student</h5>
+              <h5 class="header col s12 white-text ez-animate" data-animation="fadeInRight" data-animation-delay="1.5s">University of Melbourne</h5>
+            </div>
+            <div class="row center">
+              <a class="waves-effect waves-light btn-large blue darken-2  ez-animate" data-animation="fadeInUp" data-animation-delay="2.0s" href="#aboutMeSection">
+                View More
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="divider"></div>
 
-  <div style="background-color: #D8D8D8">
+  <div style="background-color: #D8D8D8" class="ez-animate" data-animation="fadeInUp">
     <div style="padding-left: 50px;padding-right: 50px"  >
         <div class="section" id="aboutMeSection">
 
@@ -67,8 +90,8 @@
 
           <div class="row section-content">
     
-            <div class="col s12 m4 l4">
-              <figure class="hoverable">
+            <div class="col s12 m12 l4">
+              <figure class="hoverable ez-animate" data-animation="fadeInLeft" data-animation-delay="0.5s" >
                 <img src="images/profilePic.jpg" id="profilePic">
                 <div class="container">
                     <div class="row">
@@ -86,10 +109,10 @@
               </figure>
             </div>
 
-            <div class="col s12 m4 l4">
+            <div class="col s12 m12 l4">
               <div class="aboutMecontainers">
                 <div style="position: relative;">
-                  <div id="profilePicIDCard" class="card hoverable">
+                  <div class="card hoverable ez-animate" data-animation="fadeInDown" data-animation-delay="1.0s">
                     <div class="card-content">
                     <div class="card-title>">
                         <h5 class="hr" style="font-size:24px;">Hi there!</h5><i style="padding-left: 10px;position:relative;font-size:35px; top:10px;" class="material-icons">person_pin</i>
@@ -111,19 +134,24 @@
                   </div>
                 </div>
               </div>
+              <div style="text-align: center;">
+                  <a class="waves-effect waves-light btn indigo darken-2" href="#educationSection">
+                      Education
+                  </a>          
+              </div>
             </div>
             
-            <div class="col s12 m4 l4">
+            <div class="col s12 m12 l4">
               <div class="aboutMecontainers">
 
-                    <div style="text-align: center;" class="card hoverable">
+                    <div style="text-align: center;" class="card hoverable ez-animate" data-animation="fadeInRight" data-animation-delay="1.5s">
                         <div class="card-content">
                         <div class="card-title>">
                             <h5 class="hr">Skills at a Glance </h5>
                         </div>
                           <p class="aboutMeMain">                      
                               <div class="row">
-                                  <div class="col s12 m3 l4" style="text-align: center;">
+                                  <div class="col s12 m4 l4" style="text-align: center;">
                                     <h6 class="hr">Languages</h6> 
                                     <div style="text-align: center">
                                        C<br>
@@ -133,7 +161,7 @@
                                        Javascript<br>
                                     </div>
                                   </div>
-                                  <div class="col s12 m6 l4" style="text-align: center;">
+                                  <div class="col s12 m4 l4" style="text-align: center;">
                                     <h6 class="hr toolTitle">Tools</h6> 
                                     <br>
                                     <div style="text-align: center">
@@ -145,7 +173,7 @@
                                          React Native <br>
                                     </div>
                                   </div>
-                                  <div class="col s12 m3 l4" style="text-align: center;">
+                                  <div class="col s12 m4 l4" style="text-align: center;">
                                     <h6 class="hr">Engineering</h6> 
                                     <br>
                                     <div style="text-align: center">
@@ -161,10 +189,10 @@
                       </div>
                 </div>
 
-                <div style="text-align:center;" class="card hoverable">
+                <div style="text-align:center;" class="card hoverable ez-animate" data-animation="fadeInRight" data-animation-delay="2.0s">
                   <div class="card-content">
                     <div class="row">
-                      <div class="col s12">
+                      <div class="col s12 m12">
                           <i class="material-icons" style="font-size: 30px">library_books</i>                        
                           <h6>Click <a href="resume_2019.pdf" target="_blank">Here</a> for my resume!</h6>
                       </div>
@@ -173,18 +201,17 @@
                   </div>
                 </div>
 
+              </div> 
               </div>
-              </div>
+ 
             </div>
-
           </div>
         </div>
-      </div>
-
+    </div>
 
     <div class="divider"></div>
 
-    <div class="container">
+    <div class="container ez-animate" data-animation="fadeInUp" data-animation-delay="0.5s">
         <div class="section" id="educationSection">
           <h3 style="text-align: center">Education <i class="material-icons" style="font-size: 35px;position:relative;top:5px;">school</i></h3>
              
@@ -254,6 +281,11 @@
             </div>
           </div>
 
+          <div style="text-align: center;">
+            <a class="waves-effect waves-light btn indigo darken-2" href="#projectSection">
+                Projects
+            </a>          
+          </div>
 
           </div>
       </div>
@@ -261,10 +293,9 @@
 
     <div class="divider"></div>
 
-    <div style="background-color: #D8D8D8;">
+    <div style="background-color: #D8D8D8;" class="ez-animate" data-animation="fadeInUp" data-animation-delay="0.5s">
         <div class="section" id="projectSection">
           <h3 style="text-align: center;">Projects<i class="material-icons" style="padding-left:15px;font-size: 35px; position:relative; top:2px;">build</i></h3>
-
           <br>
           <div id="projectSlider" class="slider">
               <ul class="slides">
@@ -326,12 +357,18 @@
                 </li>
               </ul>
           </div>
+          <br>
+          <div style="text-align: center;">
+              <a class="waves-effect waves-light btn indigo darken-2" href="#workSection">
+                  Work Experience
+              </a>          
+          </div>
       </div>
     </div>
 
     <div class="divider"></div> 
       
-    <div class="container">
+    <div class="container ez-animate" data-animation="fadeInLeftBig">
         <div class="section" id="workSection">
           <h3 style="text-align:center;">Work Experience<i class="material-icons" style="padding-left: 10px;font-size: 35px; position:relative;top:4px;">work</i></h3>
           
@@ -716,13 +753,12 @@
             </a>
             <h6>Alarm Demo</h6>
             <h5><a href="http://pollpots.dynalias.com" target="_blank">Try the Application!</a></h5>
+            <h6>(View project repository <a href="https://github.com/relientm96/plantHumidity" target="_blank"> here </a>)</h6>
           </div>
               <p>
                 This project was built to manage or control remote sensors using an online web application interface.
                 on the cloud. Web application client polls the ESP8266 Sensor Server to get live sensor data.
                 ESP8266 server configured using ESP8266's Web Server Libraries and Arduino IDE.
-                <br><br>
-                (View project repository <a href="https://github.com/relientm96/plantHumidity" target="_blank"> here </a>)
                 <br><br>
                 Features:<br>
                 • Online web interface that lets user track live sensor data.<br>
@@ -734,6 +770,7 @@
                 • CouchDB Database.<br>
                 • HTML, CSS, Javascript and JQuery.<br>
                 • Materialize as CSS framework in user interface design.<br>
+                • Continuos AJAX queries to remote sensor server. <br>
                 <br>
               </p>
               <div class="container" style="text-align:center">
@@ -753,13 +790,15 @@
       <div id="aboutSiteModal" class="modal">
           <div class="modal-content">
             <div class="modalContainers">
-            <h3 class="hr">About this Site</h3>
+            <h3 class="hr"> About this Site</h3>
                 <p class="flow-text">
                   This site was built to leverage my knowledge in Front End web design
-                  using HTML, CSS, Javascript. <br>
-                  Built using <a href="https://materializecss.com/" target="_blank">Materialize</a>, 
+                  using HTML, CSS, Javascript. <br><br>
+                  • Built using <a href="https://materializecss.com/" target="_blank">Materialize</a>, 
                   a modern responsive CSS framework. <br>
-                  Hosted on Github pages <a href="https://github.com/relientm96/matthewyong" target="_blank">(Link to Repository)</a>.
+                  • Media Viewing using <a href="http://fancybox.net/" target="_blank">fancybox</a>, <br>
+                  • Fade Animations using <a href="https://daneden.github.io/animate.css/" target="_blank">animate.css</a> and <a href="http://imakewebthings.com/waypoints/" target="_blank">waypoints</a>, <br>
+                  • Hosted on Github pages <a href="https://github.com/relientm96/matthewyong" target="_blank">(Link to Repository)</a>. <br>
                 </p>
             </div>
           </div>

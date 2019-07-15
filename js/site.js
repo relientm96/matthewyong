@@ -1,8 +1,9 @@
 /*To Load Materialize/Website Components*/
 
 $(document).ready(function(){
-  //Parallax Initialization
-  $('.parallax').parallax();
+
+  InitWaypointAnimations();
+
   //Floating Button Initialization
   $('.fixed-action-btn').floatingActionButton({
     direction: 'top',
@@ -15,6 +16,10 @@ $(document).ready(function(){
     height: 475,
     interval: 6000, 
     duration: 750,
+  });
+
+  $('#aboutMeSection').waypoint(function() {
+    $('#aboutMeSection').addClass('animated','fadeInLeft');
   });
 
   $(window).on('hashchange',function(){ 
