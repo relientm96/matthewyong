@@ -28,7 +28,6 @@ $(document).ready(function(){
   });
 
   $('#projectSection').waypoint(function() {
-    console.log("Test");
     $('.slider').slider('start');
   });
 
