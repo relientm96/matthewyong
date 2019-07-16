@@ -16,10 +16,7 @@ $(document).ready(function(){
     height: 475,
     interval: 6000, 
     duration: 750,
-  });
-
-  $('#aboutMeSection').waypoint(function() {
-    $('#aboutMeSection').addClass('animated','fadeInLeft');
+    indicators: true,
   });
 
   $(window).on('hashchange',function(){ 
