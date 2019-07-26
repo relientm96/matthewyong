@@ -19,6 +19,9 @@ $(document).ready(function(){
     indicators: true,
   });
 
+  //Tooltips addition
+  $('.tooltipped').tooltip();  
+
   $(window).on('hashchange',function(){ 
     if(window.location.href.includes("projectSection")) {
       $('.slider').slider('start');
