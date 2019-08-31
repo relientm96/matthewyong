@@ -1,991 +1,858 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Matthew Yong</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Matthew Yong</title>
 
-  <!-- CSS Loading-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS Loading-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Scripts Loading-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  <script src="js/easy-waypoint-animate.js"></script>
+    <!-- Scripts Loading-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="js/easy-waypoint-animate.js"></script>
 
 </head>
 
 <body>
 
-  <div id="floatingNavBtn" class="fixed-action-btn">
-    <a class="btn-floating btn-large red">
-      <i class="large material-icons">menu</i>
-    </a>
-    <ul>
-      <li><a class="btn-floating blue darken tooltipped" data-position="left" data-tooltip="About Me" href="#aboutMeSection">
-        <i class="material-icons">person</i></a>
-      </li>
-      <li><a class="btn-floating purple darken-4 tooltipped" data-position="left" data-tooltip="Skills and Tools" href="#skillSection">
-          <i class="material-icons">filter_list</i></a>
-      </li>
-      <li><a class="btn-floating yellow darken-3 tooltipped" data-position="left" data-tooltip="Education" href="#educationSection">
-        <i class="material-icons">school</i></a>
-      </li>
-      <li><a class="btn-floating green tooltipped" data-position="left" data-tooltip="Projects" href="#projectSection">
-        <i class="material-icons">build</i></a>
-      </li>
-      <li><a class="btn-floating red darken-4 tooltipped" data-position="left" data-tooltip="Work Experience" href="#workSection">
-        <i class="material-icons">work</i></a>
-      </li>
-      <li><a class="btn-floating indigo lighten-2 tooltipped" data-position="left" data-tooltip="Back to Top" href="#parallaxBannerID">
-        <i class="material-icons">arrow_upward</i></a>
-      </li>
-    </ul>
-  </div>
+    <div id="floatingNavBtn" class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+            <i class="large material-icons">menu</i>
+        </a>
+        <ul>
+            <li>
+                <a class="btn-floating blue darken tooltipped" data-position="left" data-tooltip="About Me" href="#aboutMeSection">
+                    <i class="material-icons">person</i></a>
+            </li>
+            <li>
+                <a class="btn-floating purple darken-4 tooltipped" data-position="left" data-tooltip="Skills and Tools" href="#skillSection">
+                    <i class="material-icons">filter_list</i></a>
+            </li>
+            <li>
+                <a class="btn-floating yellow darken-3 tooltipped" data-position="left" data-tooltip="Education" href="#educationSection">
+                    <i class="material-icons">school</i></a>
+            </li>
+            <li>
+                <a class="btn-floating green tooltipped" data-position="left" data-tooltip="Projects" href="#projectSection">
+                    <i class="material-icons">build</i></a>
+            </li>
+            <li>
+                <a class="btn-floating red darken-4 tooltipped" data-position="left" data-tooltip="Work Experience" href="#workSection">
+                    <i class="material-icons">work</i></a>
+            </li>
+            <li>
+                <a class="btn-floating indigo lighten-2 tooltipped" data-position="left" data-tooltip="Back to Top" href="#parallaxBannerID">
+                    <i class="material-icons">arrow_upward</i></a>
+            </li>
+        </ul>
+    </div>
 
-  <div id="parallaxBannerID" class="parallax-container">
-    <section class="mainBackgroundImage"></section>
-    <div class="section no-pad-bot no-pad-top">
-      <div class="mainBackgroundImage">
-        <div class="bannertext-wrapper">
-            <h1 class="header center white-text text-lighten-1 ez-animate" data-animation="fadeInUp" data-animation-delay="0.5s">Matthew Yong</h1>
-            <div class="row center">
-              <h5 class="header col s12 white-text ez-animate" data-animation="fadeInLeft" data-animation-delay="1.0s">Graduate Electrical Engineering Student</h5>
-              <h5 class="header col s12 white-text ez-animate" data-animation="fadeInRight" data-animation-delay="1.5s">University of Melbourne</h5>
-            </div>
-            <div class="row center">
-              <a class="waves-effect waves-light btn-large blue darken-2  ez-animate" data-animation="fadeInUp" data-animation-delay="2.0s" href="#aboutMeSection">
+    <div id="parallaxBannerID" class="parallax-container">
+        <section class="mainBackgroundImage"></section>
+        <div class="section no-pad-bot no-pad-top">
+            <div class="mainBackgroundImage">
+                <div class="bannertext-wrapper">
+                    <h1 class="header center white-text text-lighten-1 ez-animate" data-animation="fadeInUp" data-animation-delay="0.5s">Matthew Yong</h1>
+                    <div class="row center">
+                        <h5 class="header col s12 white-text ez-animate" data-animation="fadeInLeft" data-animation-delay="1.0s">Graduate Electrical Engineering Student</h5>
+                        <h5 class="header col s12 white-text ez-animate" data-animation="fadeInRight" data-animation-delay="1.5s">University of Melbourne</h5>
+                    </div>
+                    <div class="row center">
+                        <a class="waves-effect waves-light btn-large blue darken-2  ez-animate" data-animation="fadeInUp" data-animation-delay="2.0s" href="#aboutMeSection">
                 View More
               </a>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
     </div>
-  </div>
 
-  <div class="divider"></div>
+    <div class="divider"></div>
 
-  <div style="background-color: #D8D8D8" class="ez-animate" data-animation="fadeInUp">
-    <div style="padding-left: 50px;padding-right: 50px"  >
-        <div class="section" id="aboutMeSection">
+    <div style="background-color: #D8D8D8" class="ez-animate" data-animation="fadeInUp">
+        <div style="padding-left: 50px;padding-right: 50px">
+            <div class="section" id="aboutMeSection">
 
-          <h3 style="text-align: center">About Me<i style="padding-left: 10px; font-size:40px; position:relative;top:5px;" class="material-icons">person</i></h3>
+                <h3 style="text-align: center">About Me<i style="padding-left: 10px; font-size:40px; position:relative;top:5px;" class="material-icons">person</i></h3>
 
-          <div class="row section-content">
-    
-          <div class="col s12 m12 l4">
-              <figure class="ez-animate" data-animation="fadeInLeft" data-animation-delay="0.5s" >
-                <img src="images/profilePic.jpg" id="profilePic">
-                <div class="container">
-                    <div class="row">
-                      <div class="span10">
-                        <div class="social-icons">
-                          <ul>
-                            <li><a href="https://www.linkedin.com/in/matthewyfy/" target="_blank"><i style="color:#0077B5;" class="fa fa-linkedin fa-1x"></i></a></li>
-                            <li><a href="https://github.com/relientm96" target="_blank"><i style="color: #000;" class="fa fa-github fa-1x"></i></a></li>
-                            <li><a href="mailto:matthewyfy@gmail.com" target="_blank"><i style="color:grey;" class="fa fa-envelope fa-1x"></i></a></li>
-                          </ul>
+                <div class="row section-content">
+
+                    <div class="col s12 m12 l4">
+                        <figure class="ez-animate" data-animation="fadeInLeft" data-animation-delay="0.5s">
+                            <img src="images/profilePic.jpg" id="profilePic">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="span10">
+                                        <div class="social-icons">
+                                            <ul>
+                                                <li><a href="https://www.linkedin.com/in/matthewyfy/" target="_blank"><i style="color:#0077B5;" class="fa fa-linkedin fa-1x"></i></a></li>
+                                                <li><a href="https://github.com/relientm96" target="_blank"><i style="color: #000;" class="fa fa-github fa-1x"></i></a></li>
+                                                <li><a href="mailto:matthewyfy@gmail.com" target="_blank"><i style="color:grey;" class="fa fa-envelope fa-1x"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div style="text-align:center;" class="ez-animate" data-animation="fadeInLeft" data-animation-delay="1.6s">
+                                        <div class="col s12 m12">
+                                            <h6>Click <a href="resume_2019.pdf" target="_blank">Here</a> for my resume!</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="col s12 m12 l4">
+                        <div class="aboutMecontainers">
+                            <div style="position: relative;">
+                                <div class="card hoverable ez-animate" data-animation="fadeInDown" data-animation-delay="1.0s">
+                                    <div class="card-content">
+                                        <div class="card-title>">
+                                            <h5 class="hr" style="font-size:24px;">Hi there!</h5><i style="padding-left: 10px;position:relative;font-size:35px; top:10px;" class="material-icons">person_pin</i>
+                                        </div>
+                                        <p class="aboutMeMain">
+                                            My name's Matthew! I'm currently a second year Master of Electrical Engineering student at the University of Melbourne.
+                                            <br><br> After writing my first program, I realised how amazing coding is - being able to solve or build anything with just a laptop at your disposal.
+                                            <br><br> With a background in electronics and an interest in software, I continually build many projects involving both fields in my spare time.
+                                            <br>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                </div>
-              </figure>
-            </div>
-
-            <div class="col s12 m12 l4">
-              <div class="aboutMecontainers">
-                <div style="position: relative;">
-                  <div class="card hoverable ez-animate" data-animation="fadeInDown" data-animation-delay="1.0s">
-                    <div class="card-content">
-                    <div class="card-title>">
-                        <h5 class="hr" style="font-size:24px;">Hi there!</h5><i style="padding-left: 10px;position:relative;font-size:35px; top:10px;" class="material-icons">person_pin</i>
-                    </div>
-                      <p class="aboutMeMain">  
-                        My name's Matthew! I'm currently a second year
-                        Master of Electrical Engineering student at the University of Melbourne.
-                        <br><br>
-                        After writing my first program, I realised how amazing coding is by being able
-                        to solve or build anything with just a laptop at your disposal.
-                        <br><br>
-                        With my background in electronics and interest in software,
-                        I continually build many projects involving both fields in my spare time.
-                      <br>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div style="text-align: center;" class="hide-on-small-only">
-                <br>
-                  <a class="waves-effect waves-light btn indigo darken-2" href="#skillSection">
+                        <div style="text-align: center;" class="hide-on-small-only">
+                            <br>
+                            <a class="waves-effect waves-light btn indigo darken-2" href="#skillSection">
                       Skills & Tools
-                  </a>      
-                <br>    
-              </div>
-            </div>
-            
-            <div class="col s12 m12 l4">
-              <div class="aboutMecontainers">
-                <div style="text-align: center;" class="card hoverable ez-animate" data-animation="fadeInRight" data-animation-delay="1.5s">
-                    <div class="card-content">
-                      <div class="card-title>">
-                          <h5 class="hr">Project Scope</h5>   
-                          <br>
-                          <div style="text-align: left;">
-                            <p>
-                              My projects have provided me with the exposure to many tools throughout the technological stack,
-                              ranging from low level <b>bits</b> to high level <b>web</b>, <b>mobile</b> and <b>cloud</b> 
-                              applications. 
-                              <br><br> Project fields include:
-                              <br>
-                              <li>
-                                Internet of Things
-                              </li>
-                              <li>
-                                Mobile Applications
-                              </li>
-                              <li>
-                                Dynamic Web Applications
-                              </li>
-                              <li>
-                                Embedded Systems & Electronics
-                              </li>
-                              <li>
-                                Cloud Technologies and Deployment
-                              </li>
-                              <li>
-                                Game Applications using Graphical Libraries
-                              </li>
-                            </p>
-                          </div>
-                      </div>
-                                      
-                  </div>
-              </div>
-
-              <div style="text-align:center;" class="card hoverable ez-animate" data-animation="fadeInRight" data-animation-delay="1.7s">
-                <div class="card-content">
-                  <div class="row">
-                    <div class="col s12 m12">
-                        <i class="material-icons" style="font-size: 30px">library_books</i>                        
-                        <h6>Click <a href="resume_2019.pdf" target="_blank">Here</a> for my resume!</h6>
+                  </a>
+                            <br>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
 
-              </div> 
-              </div>
- 
+                    <div class="col s12 m12 l4">
+                        <div class="aboutMecontainers">
+                            <div style="text-align: center;" class="card hoverable ez-animate" data-animation="fadeInRight" data-animation-delay="1.5s">
+                                <div class="card-content">
+                                    <div class="card-title>">
+                                        <h5 class="hr">Project Scope</h5>
+                                        <br>
+                                        <div style="text-align: left; font-size: 16.5px;">
+                                            <p>
+                                                My projects have provided me with the exposure to many tools throughout the technological stack, ranging from low level <b>bits</b> to high level <b>web</b>, <b>mobile</b> and <b>cloud</b> applications.
+                                                <br><br> Fields include:
+                                                <br>
+                                                <li>
+                                                    Internet of Things
+                                                </li>
+                                                <li>
+                                                    Mobile Applications
+                                                </li>
+                                                <li>
+                                                    Dynamic Web Applications
+                                                </li>
+                                                <li>
+                                                    Embedded Systems & Electronics
+                                                </li>
+                                                <li>
+                                                    Cloud Technologies and Deployment
+                                                </li>
+                                                <li>
+                                                    Game Applications using Graphical Libraries
+                                                </li>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
             </div>
-          </div>
         </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="container ez-animate" data-animation="fadeIn" data-animation-delay="0.5s">
-      <div class="section" id="skillSection">
-        <h3 style="text-align: center">Skills & Tools<i style="padding-left: 10px; font-size:40px; position:relative;top:5px;" class="material-icons">filter_list</i></h3>
-        <br>
-
-        <div class="card hoverable ez-animate" data-animation="fadeInUp" data-animation-delay="0.5s">
-          <div class="card-content no-pad-bot">
-            <div class="row" style="text-align: center;">
-
-              <div class="col s12 m12 l4">
-                <div style="text-align: center;">
-                  <i class="large material-icons">wb_cloudy</i>
-                  <h4>Tools & Frameworks</h4>
-                    <div style="text-align: left;">
-                      <li>Version Control: Git and GitHub </li>
-                      <li>Front End: HTML, CSS , Materialize</li>
-                      <li>Web Frameworks: Express.JS, React</li>
-                      <li>NoSQL Databases in CouchDB</li>
-                      <li>OS: UNIX/Linux Command Line</li>
-                      <li>Mobile: React Native, Android Studio</li>
-                      <li>Scripting: Bash and Ansible</li>
-                      <li>Cloud: AWS and NecTAR</li>   
-                      <li>Deployment: Docker & Heroku</li>
-                      <br>
-                    </div>
-                  </div>   
-              </div>
-
-              <div class="col s12 m12 l4">
-                <div style="text-align: center;">
-                  <i class="large material-icons">edit</i>
-                  <h4>Programming Languages</h4>
-                  <div class="container" style="text-align: left;">
-                    <li>Java</li>
-                    <li>C/C++</li>
-                    <li>Python</li>
-                    <li>MATLAB</li>
-                    <li>Javascript</li>
-                    <br>
-                  </div>                
-                </div>
-              </div>
-
-              <div class="col s12 m12 l4">
-                <div style="text-align: center;">
-                  <i class="large material-icons">laptop</i>
-                  <h4>Hardware & Engineering</h4>
-                    <div style="text-align: left;">
-                      <li> Bus Protocols: SPI, I2C, UART </li>
-                      <li> C Embedded Programming </li>
-                      <li> Sockets on Linux Systems </li>
-                      <li>FPGA programming in Verilog</li>
-                      <li>PCB Design in Altium Designer</li>   
-                      <li>MCU Tools: AVR Studio and JTAG</li>                  
-                      <li>MCUs: Arduino, RaspberryPi and ESP8266</li>   
-                      <br>
-                    </div>
-                </div>
-              </div>
-
-            </div>            
-          </div>
-        </div>
-
-        <div style="text-align: center;" class="hide-on-small-only">
+        <div class="section" id="skillSection">
+            <h3 style="text-align: center">Skills & Tools<i style="padding-left: 10px; font-size:40px; position:relative;top:5px;" class="material-icons">filter_list</i></h3>
             <br>
-            <a class="waves-effect waves-light btn indigo darken-2" href="#educationSection">
-                Education
-            </a>      
-            <br>    
-        </div>
 
-      </div>
+            <div class="card hoverable ez-animate" data-animation="fadeInUp" data-animation-delay="0.5s">
+                <div class="card-content no-pad-bot">
+                    <div class="row" style="text-align: center;">
+
+                        <div class="col s12 m12 l4">
+                            <div style="text-align: center;">
+                                <i class="large material-icons">wb_cloudy</i>
+                                <h4>Tools & Frameworks</h4>
+                                <div style="text-align: left;">
+                                    <li>Version Control: Git and GitHub </li>
+                                    <li>Front End: HTML, CSS , Materialize</li>
+                                    <li>Web Frameworks: Express.JS, React</li>
+                                    <li>NoSQL Databases in CouchDB</li>
+                                    <li>OS: UNIX/Linux Command Line</li>
+                                    <li>Mobile: React Native, Android Studio</li>
+                                    <li>Scripting: Bash and Ansible</li>
+                                    <li>Cloud: AWS and NecTAR</li>
+                                    <li>Deployment: Docker & Heroku</li>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m12 l4">
+                            <div style="text-align: center;">
+                                <i class="large material-icons">edit</i>
+                                <h4>Programming Languages</h4>
+                                <div class="container" style="text-align: left;">
+                                    <li>Java</li>
+                                    <li>C/C++</li>
+                                    <li>Python</li>
+                                    <li>MATLAB</li>
+                                    <li>Javascript</li>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m12 l4">
+                            <div style="text-align: center;">
+                                <i class="large material-icons">laptop</i>
+                                <h4>Hardware & Engineering</h4>
+                                <div style="text-align: left;">
+                                    <li> Bus Protocols: SPI, I2C, UART </li>
+                                    <li> C Embedded Programming </li>
+                                    <li> Sockets on Linux Systems </li>
+                                    <li>FPGA programming in Verilog</li>
+                                    <li>PCB Design in Altium Designer</li>
+                                    <li>MCU Tools: AVR Studio and JTAG</li>
+                                    <li>MCUs: Arduino, RaspberryPi and ESP8266</li>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center;" class="hide-on-small-only">
+                <br>
+                <a class="waves-effect waves-light btn indigo darken-2" href="#educationSection">
+                Education
+                </a>
+                <br>
+            </div>
+
+        </div>
     </div>
-              
+
     <div class="divider"></div>
 
     <div class="container ez-animate" data-animation="fadeInUp" data-animation-delay="0.5s">
         <div class="section" id="educationSection">
-          <h3 style="text-align: center">Education <i class="material-icons" style="font-size: 35px;position:relative;top:5px;">school</i></h3>
-             
-          <div class="section" >
+            <h3 style="text-align: center">Education <i class="material-icons" style="font-size: 35px;position:relative;top:5px;">school</i></h3>
 
-            <div class="container row">
-              <div class="col s12 m12 l12">
-                <div class="card hoverable ez-animate" data-animation="fadeInLeft" data-animation-delay="0.2s">
-                  <div class="card-content">
-                    <div style="text-align: center;">
-                      <h5 class="hr"> University of Melbourne</h5>
-                      <h6>Master of Engineering</h6>
-                      <p><i>July 2018 - December 2020</i></p>
-                      <p>Major - Electrical Engineering</p>
-                      <br>                      
-                    </div>
-                    <div class="divider"></div>
-                    <br>
-                    <div style="text-align: center">
-                      <h5 class="hr">Subjects and Coursework</h5>
-                      <br><br>
-                      <div class="row" style="text-align: left">
-                        <div class="col s12 m6 l4">
-                            <h8><u>Electronics</u><i class="material-icons" style="padding-left:10px;font-size:20px;position:relative;top:5px;">developer_board</i></h8> 
-                            <br><br>
-                              • Embedded Systems<br>
-                              • Electronic System Design<br>
-                              • Electronic Circuit Design<br>
-                              • Electrical Device Modeling<br>
-                            <br>
-                        </div>
-                        <div class="col s12 m6 l4">
-                            <h8><u>IT & Communications</u><i class="material-icons" style="padding-left:10px;font-size:20px;position:relative;top:5px;">laptop</i></h8>
-                            <br><br>
-                              • Cluster & Cloud Computing<br>
-                              • Communication Networks<br>
-                              • Communication Systems<br>
-                            <br>
-                        </div>
-                        <div class="col s12 m6 l4">
-                            <h8><u>Control & Signals</u><i class="material-icons" style="padding-left:10px;font-size:20px;position:relative;top:5px;">cell_wifi</i></h8> 
-                            <br><br>
-                            • Signal Processing<br>
-                            • Control Systems<br>
-                            • Probability & Random Models<br>
-                        </p>
-                        </div>
-                       </div>
-                    </div>
-                
-                    </div>                
-                </div>              
-              </div>              
-            </div>
+            <div class="section">
 
-            <div class="container row">
-                <div class="col s12 m12 l12">
-                    <div class="card hoverable ez-animate" data-animation="fadeInRight" data-animation-delay="0.2s">
-                        <div class="card-content">
-                            <div style="text-align: center;">
-                            <span class="card-title">
+                <div class="container row">
+                    <div class="col s12 m12 l12">
+                        <div class="card hoverable ez-animate" data-animation="fadeInLeft" data-animation-delay="0.2s">
+                            <div class="card-content">
+                                <div style="text-align: center;">
+                                    <h5 class="hr"> University of Melbourne</h5>
+                                    <h6>Master of Engineering</h6>
+                                    <p><i>July 2018 - December 2020</i></p>
+                                    <p>Major - Electrical Engineering</p>
+                                    <br>
+                                </div>
+                                <div class="divider"></div>
+                                <br>
+                                <div style="text-align: center">
+                                    <h5 class="hr">Subjects and Coursework</h5>
+                                    <br><br>
+                                    <div class="row" style="text-align: left">
+                                        <div class="col s12 m6 l4">
+                                            <h8><u>Electronics</u><i class="material-icons" style="padding-left:10px;font-size:20px;position:relative;top:5px;">developer_board</i></h8>
+                                            <br><br> • Embedded Systems<br> • Electronic System Design<br> • Electronic Circuit Design<br> • Electrical Device Modeling<br>
+                                            <br>
+                                        </div>
+                                        <div class="col s12 m6 l4">
+                                            <h8><u>IT & Communications</u><i class="material-icons" style="padding-left:10px;font-size:20px;position:relative;top:5px;">laptop</i></h8>
+                                            <br><br> • Cluster & Cloud Computing<br> • Communication Networks<br> • Communication Systems<br>
+                                            <br>
+                                        </div>
+                                        <div class="col s12 m6 l4">
+                                            <h8><u>Control & Signals</u><i class="material-icons" style="padding-left:10px;font-size:20px;position:relative;top:5px;">cell_wifi</i></h8>
+                                            <br><br> • Signal Processing<br> • Control Systems<br> • Probability & Random Models<br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container row">
+                    <div class="col s12 m12 l12">
+                        <div class="card hoverable ez-animate" data-animation="fadeInRight" data-animation-delay="0.2s">
+                            <div class="card-content">
+                                <div style="text-align: center;">
+                                    <span class="card-title">
                                 <h5 class="hr"> University of Melbourne </h5>
                             </span>
-                            <h6>Bachelor of Science</h6>
-                            <p><i>June 2015 - July 2018</i></p>
-                            <p> Major - Bioengineering Systems </p>
-                            <br>
-                          </div>
+                                    <h6>Bachelor of Science</h6>
+                                    <p><i>June 2015 - July 2018</i></p>
+                                    <p> Major - Bioengineering Systems </p>
+                                    <br>
+                                </div>
 
-                          <div class="divider"></div>
-                          <br>
-                          <div style="text-align: center;">
-                            <h5 class="hr">Subjects and Coursework</h5>
-                          </div>
-                          <br>
-
-                          <div class="row">
-                            <div class="col s12 m6 l4">
-                                <h8><u>Electrical</u><i class="material-icons" style="padding-left:10px;font-size:20px;position:relative;top:5px;">flash_on</i></h8> 
-                                <br><br>
-                                  • Signals and Systems<br>
-                                  • Electrical Network and Analysis<br>
-                                  • Digital System Design<br>
+                                <div class="divider"></div>
                                 <br>
-                            </div>
-                            <div class="col s12 m6 l4">
-                                <h8><u>Computing</u><i class="material-icons" style="padding-left:10px;font-size:20px;position:relative;top:5px;">desktop_windows</i></h8>
-                                <br><br>
-                                  • Design of Algorithms (Data Structures & Algorithms)<br>
-                                  • Object Oriented Software Development<br>
-                                  • Engineering Computation<br>
+                                <div style="text-align: center;">
+                                    <h5 class="hr">Subjects and Coursework</h5>
+                                </div>
                                 <br>
-                            </div>
-                            <div class="col s12 m6 l4">
-                                <h8><u>Bionegineering</u><i class="material-icons" style="padding-left:10px;font-size:20px;position:relative;top:5px;">local_hospital</i></h8> 
-                                <br><br>
-                                • Biosystems Design<br>
-                                • Biotransport Process<br>
-                                • Introduction to Biomechanics<br>
-                            </p>
-                            </div>
-                          </div>
 
-                        </div> 
-                    </div>           
-                </div>              
-            </div>
+                                <div class="row">
+                                    <div class="col s12 m6 l4">
+                                        <h8><u>Electrical</u><i class="material-icons" style="padding-left:10px;font-size:20px;position:relative;top:5px;">flash_on</i></h8>
+                                        <br><br> • Signals and Systems<br> • Electrical Network and Analysis<br> • Digital System Design<br>
+                                        <br>
+                                    </div>
+                                    <div class="col s12 m6 l4">
+                                        <h8><u>Computing</u><i class="material-icons" style="padding-left:10px;font-size:20px;position:relative;top:5px;">desktop_windows</i></h8>
+                                        <br><br> • Design of Algorithms (Data Structures & Algorithms)<br> • Object Oriented Software Development<br> • Engineering Computation<br>
+                                        <br>
+                                    </div>
+                                    <div class="col s12 m6 l4">
+                                        <h8><u>Bionegineering</u><i class="material-icons" style="padding-left:10px;font-size:20px;position:relative;top:5px;">local_hospital</i></h8>
+                                        <br><br> • Biosystems Design<br> • Biotransport Process<br> • Introduction to Biomechanics<br>
+                                        </p>
+                                    </div>
+                                </div>
 
-          <div style="text-align: center;" class="hide-on-small-only">
-            <a class="waves-effect waves-light btn indigo darken-2" href="#projectSection">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center;" class="hide-on-small-only">
+                    <a class="waves-effect waves-light btn indigo darken-2" href="#projectSection">
                 Projects
-            </a>          
-            <br>
-          </div>
+            </a>
+                    <br>
+                </div>
 
-          </div>
-      </div>
+            </div>
+        </div>
     </div>
 
     <div class="divider"></div>
 
     <div style="background-color: #D8D8D8;" class="ez-animate" data-animation="fadeInLeft" data-animation-delay="0.5s">
         <div class="section" id="projectSection">
-          <h3 style="text-align: center;">Projects<i class="material-icons" style="padding-left:15px;font-size: 35px; position:relative; top:2px;">build</i></h3>
-          <br>
-          <div id="projectSlider" class="slider">
-              <ul class="slides">
-                <li>
-                    <img src="images/onlineCodeEditorDemo.gif" id="codeGif">
-                    <div class="caption right-align">
-                      <h3>Online C Code Editor</h3>
-                      <h5 class="light grey-text text-lighten-5">An online C Compiler Web Application</h5>
-                      <a class="waves-effect waves-light btn modal-trigger" href="#editorModal">See More</a>
-                    </div>
-                </li>
-                <li>
-                  <img src="images/webSiteDemo.gif" id="clusterGif"> 
-                  <div class="caption left-align">
-                    <h3 class="light grey-text text-lighten-5">Cluster and Cloud Computing</h3>
-                    <h5 class="light grey-text text-lighten-5">Cloud Application using Twitter Data Analytics</h5>
-                    <a class="waves-effect waves-light btn modal-trigger" href="#clusterModal">See More</a>
-                  </div>
-                </li>
-                <li>
-                  <img src="images/pcbLayout3d.JPG" id="embeddedGif">                   
-                  <div class="caption center-align">
-                    <h3>Embedded Game Console</h3>
-                    <h5 class="light grey-text text-lighten-5">Embedded Electronics Project</h5>
-                    <a id="seemorebtn" class="waves-effect waves-light btn modal-trigger" href="#embeddedModal">See More</a>
-                  </div>
-                </li>
-                <li>
-                  <img src="images/marioDemo.gif" id="marioGif"> 
-                  <div class="caption center-align">
-                    <h3 class="light grey-text text-lighten-5">Online Greenhouse Manager</h3>
-                    <h5 class="light grey-text text-lighten-5">IoT and Web Greenhouse Management System</h5>
-                    <a class="waves-effect waves-light btn modal-trigger" href="#marioModal">See More</a>
-                  </div>
-                </li>
-                <li>
-                    <img src="images/homeScreen.png" id="mobileGif"> 
-                    <div class="caption center-align">
-                      <h3>Social Media Application</h3>
-                      <h5 class="light grey-text text-lighten-5">A mobile app for Small Christian Communities</h5>
-                      <a class="waves-effect waves-light btn modal-trigger" href="#mobileModal">See More</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="images/shadowBlockDemo.gif" id="gameGif"> 
-                    <div class="caption left-align">
-                      <h3>Shadow Blocks</h3>
-                      <h5 class="light grey-text text-lighten-3">Puzzle Game built on Java and Slick2D Libraries</h5>
-                      <a class="waves-effect waves-light btn modal-trigger" href="#gameModal">See More</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="images/arduino.jpg" id="arduinoGif"> 
-                    <div class="caption center-align">
-                      <h3>Seven Segment on Web</h3>
-                      <h5 class="light grey-text text-lighten-3">Seven Segment Arduino based Web Control</h5>
-                      <a class="waves-effect waves-light btn modal-trigger" href="#arduinoModal">See More</a>
-                    </div>
-                </li>
-              </ul>
-          </div>
-          <br>
-          <div style="text-align: center;" class="hide-on-small-only">
-              <a class="waves-effect waves-light btn indigo darken-2" href="#workSection">
+            <h3 style="text-align: center;">Projects<i class="material-icons" style="padding-left:15px;font-size: 35px; position:relative; top:2px;">build</i></h3>
+            <br>
+            <div id="projectSlider" class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="images/onlineCodeEditorDemo.gif" id="codeGif">
+                        <div class="caption right-align">
+                            <h3>Online C Code Editor</h3>
+                            <h5 class="light grey-text text-lighten-5">An online C Compiler Web Application</h5>
+                            <a class="waves-effect waves-light btn modal-trigger" href="#editorModal">See More</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/webSiteDemo.gif" id="clusterGif">
+                        <div class="caption left-align">
+                            <h3 class="light grey-text text-lighten-5">Cluster and Cloud Computing</h3>
+                            <h5 class="light grey-text text-lighten-5">Cloud Application using Twitter Data Analytics</h5>
+                            <a class="waves-effect waves-light btn modal-trigger" href="#clusterModal">See More</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/pcbLayout3d.JPG" id="embeddedGif">
+                        <div class="caption center-align">
+                            <h3>Embedded Game Console</h3>
+                            <h5 class="light grey-text text-lighten-5">Embedded Electronics Project</h5>
+                            <a id="seemorebtn" class="waves-effect waves-light btn modal-trigger" href="#embeddedModal">See More</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/marioDemo.gif" id="marioGif">
+                        <div class="caption center-align">
+                            <h3 class="light grey-text text-lighten-5">Online Greenhouse Manager</h3>
+                            <h5 class="light grey-text text-lighten-5">IoT and Web Greenhouse Management System</h5>
+                            <a class="waves-effect waves-light btn modal-trigger" href="#marioModal">See More</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/homeScreen.png" id="mobileGif">
+                        <div class="caption center-align">
+                            <h3>Social Media Application</h3>
+                            <h5 class="light grey-text text-lighten-5">A mobile app for Small Christian Communities</h5>
+                            <a class="waves-effect waves-light btn modal-trigger" href="#mobileModal">See More</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/shadowBlockDemo.gif" id="gameGif">
+                        <div class="caption left-align">
+                            <h3>Shadow Blocks</h3>
+                            <h5 class="light grey-text text-lighten-3">Puzzle Game built on Java and Slick2D Libraries</h5>
+                            <a class="waves-effect waves-light btn modal-trigger" href="#gameModal">See More</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/arduino.jpg" id="arduinoGif">
+                        <div class="caption center-align">
+                            <h3>Seven Segment on Web</h3>
+                            <h5 class="light grey-text text-lighten-3">Seven Segment Arduino based Web Control</h5>
+                            <a class="waves-effect waves-light btn modal-trigger" href="#arduinoModal">See More</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <div style="text-align: center;" class="hide-on-small-only">
+                <a class="waves-effect waves-light btn indigo darken-2" href="#workSection">
                   Work Experience
-              </a>          
-              <br>
-          </div>
-      </div>
+              </a>
+                <br>
+            </div>
+        </div>
     </div>
 
-    <div class="divider"></div> 
-      
+    <div class="divider"></div>
+
     <div class="container ez-animate" data-animation="fadeInLeftBig">
         <div class="section" id="workSection">
-          <h3 style="text-align:center;">Work Experience<i class="material-icons" style="padding-left: 10px;font-size: 35px; position:relative;top:4px;">work</i></h3>
-          
-          <div class="section">
+            <h3 style="text-align:center;">Work Experience<i class="material-icons" style="padding-left: 10px;font-size: 35px; position:relative;top:4px;">work</i></h3>
 
-            <div class="container">
-              <div class="card hoverable">
-                <div class="card-content">
-                  <span class="card-title">
+            <div class="section">
+
+                <div class="container">
+                    <div class="card hoverable">
+                        <div class="card-content">
+                            <span class="card-title">
                       <h5 class="hr"> University of Melbourne </h5>
                   </span>
-                  <h6> Research Assistant </h6>
-                  <h6>June 2019 - July 2019</h6>
-                  <br>
-                  <p>
-                      <h6><b>Spatially Adaptive Photographic System</b></h6>
-                      This electronic system provides a solution to shadows in potrait photographs by 
-                      dynamically adjusting LEDs on an LED matrix using image processing algorithms in real time.
-                      <br><br>
-                      Throughout development, I have:<br><br>
-                      • Implemented TCP socket communication between python server and C++ client.<br>
-                      • Designed a caching mechanism for sensor values using multi-processing.<br>
-                      • Created consistent log debugging formatting information to console.<br>
-                      • Implemented program guards to handle program exceptions.<br>
-                      • Consistently documented workflow using commit messages.<br>
-                      • Utilized:
-                      C/C++,
-                      Python,
-                      Linux,
-                      Git,
-                      Socket Programming.
-                      Embedded Electronics,
-                      <br>
-                  </div>
-              </div>
-            </div>
+                            <h6> Research Assistant </h6>
+                            <h6>June 2019 - July 2019</h6>
+                            <br>
+                            <p>
+                                <h6><b>Spatially Adaptive Photographic System</b></h6>
+                                This electronic system provides a solution to shadows in potrait photographs by dynamically adjusting LEDs on an LED matrix using image processing algorithms in real time.
+                                <br><br> Throughout development, I have:<br><br> • Implemented TCP socket communication between python server and C++ client.<br> • Designed a caching mechanism for sensor values using multi-processing.<br> • Created consistent
+                                log debugging formatting information to console.<br> • Implemented program guards to handle program exceptions.<br> • Consistently documented workflow using commit messages.<br> • Utilized: C/C++, Python, Linux, Git, Socket
+                                Programming. Embedded Electronics,
+                                <br>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="container">
-                <div class="card hoverable">
-                  <div class="card-content">
-                    <span class="card-title">
+                <div class="container">
+                    <div class="card hoverable">
+                        <div class="card-content">
+                            <span class="card-title">
                         <h5 class="hr"> University of Melbourne </h5>
                     </span>
-                    <h6> Research Assistant </h6>
-                    <h6>Jan 2018 - Feb 2018</h6>
-                    <br>
-                    <p>
-                        <h6><b>The EMU Robot for Upper Limb Rehabilitation</b></h6>
-                        The EMU Robot provides mechanical assistance to patients undergoing limb rehabilitation using 
-                        gravity compensation techniques. I worked on improving the robot's back wheel design.
-                        <br><br>
-                        Throughout my research experience, I have:<br><br>
-                        • Taught myself computer aided design on SolidWorks. <br>
-                        • Minimized mechanical costs to about 20% with new proposed design.<br>
-                        • Gained robotic research experience in proposing, building and testing robotic parts.<br>
-                        • Collaborated & presented ideas to supervisors, getting feedback on designs. <br>
-                        • Leveraged knowledge on SolidWorks and 3D design techniques. <br>
-                        <br>
-                        <p style="text-align: center;">Working Demonstration of the Robot:</p><br>
-                        <div style="left: 0; width: 100%; height: 250px; position: relative; padding-bottom: 56.25%;">
-                          <iframe src="https://www.youtube.com/embed/Re3xSf68RHM?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="autoplay; encrypted-media">
+                            <h6> Research Assistant </h6>
+                            <h6>Jan 2018 - Feb 2018</h6>
+                            <br>
+                            <p>
+                                <h6><b>The EMU Robot for Upper Limb Rehabilitation</b></h6>
+                                The EMU Robot provides mechanical assistance to patients undergoing limb rehabilitation using gravity compensation techniques. I worked on improving the robot's back wheel design.
+                                <br><br> Throughout my research experience, I have:<br><br> • Taught myself computer aided design on SolidWorks. <br> • Minimized mechanical costs to about 20% with new proposed design.<br> • Gained robotic research experience
+                                in proposing, building and testing robotic parts.<br> • Collaborated & presented ideas to supervisors, getting feedback on designs. <br> • Leveraged knowledge on SolidWorks and 3D design techniques. <br>
+                                <br>
+                                <p style="text-align: center;">Working Demonstration of the Robot:</p><br>
+                                <div style="left: 0; width: 100%; height: 250px; position: relative; padding-bottom: 56.25%;">
+                                    <iframe src="https://www.youtube.com/embed/Re3xSf68RHM?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="autoplay; encrypted-media">
                           </iframe>
-                        </div>                        
-                    </p>
+                                </div>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="container">
-              <div class="card hoverable">
-                <div class="card-content">
-                  <span class="card-title">
+                <div class="container">
+                    <div class="card hoverable">
+                        <div class="card-content">
+                            <span class="card-title">
                       <h5 class="hr"> myBurgerLab </h5>
                   </span>
-                  <h6> Staff </h6>
-                  <h6>March 2015 - June 2015</h6>
-                  <br>
-                  <p>
-                     Worked casually as a part time staff in both kitchen and front of house departments. 
-                     <br><br>
-                     <h8><u>Key Responsiblities</u></h8><br><br>
-                     • Dealing with customer issues or complaints. <br>
-                     • Communicating and collaborating with other kitchen staff during service.<br>
-                     • Expediting dishes before being served. <br>
-                     • Performed kitchen tasks such as frying and assembling. <br>
-                  </p>
+                            <h6> Staff </h6>
+                            <h6>March 2015 - June 2015</h6>
+                            <br>
+                            <p>
+                                Worked casually as a part time staff in both kitchen and front of house departments.
+                                <br><br>
+                                <h8><u>Key Responsiblities</u></h8><br><br> • Dealing with customer issues or complaints. <br> • Communicating and collaborating with other kitchen staff during service.<br> • Expediting dishes before being served. <br> • Performed
+                                kitchen tasks such as frying and assembling. <br>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-          </div>
 
-          </div>
-
-          <div class="buttonNavi">
-            <div class="btn-group">
-                <a style="text-align: center" class="waves-effect waves-light btn indigo darken-2" href="#parallaxBannerID">
+            <div class="buttonNavi">
+                <div class="btn-group">
+                    <a style="text-align: center" class="waves-effect waves-light btn indigo darken-2" href="#parallaxBannerID">
                   Back to Top
-                </a>              
-                <a style="text-align: center" class="waves-effect waves-light btn indigo darken-2 modal-trigger" href="#aboutSiteModal">
+                </a>
+                    <a style="text-align: center" class="waves-effect waves-light btn indigo darken-2 modal-trigger" href="#aboutSiteModal">
                   About Site
                 </a>
+                </div>
             </div>
-          </div>
-
-         </div>
         </div>
     </div>
 
-  <footer class="page-footer grey darken-4">
-    <div class="container">
-      <div class="row">
-
-        <div class="col s12 m4 l3"> 
-          <h5 class="white-text">Contact Details</h5>
-          <p class="grey-text text-lighten-4">
-          Mobile: +61452139664  <br>
-          Email: matthewyfy@gmail.com<br>
-          </p>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="footer-copyright">
+    <footer class="page-footer grey darken-4">
         <div class="container">
             <div class="row">
-              <div class="col s12 m4 l4">
-                <span class="text-muted">@ 2019 Matthew Yong</span>
-              </div>
-            </div>
-      </div>
-    </div>
 
-  </div>
-
-  </footer>
-
-  <!-- Modals -->
-
-  <!-- Game Console Modal -->
-  <div id="embeddedModal" class="modal">
-    <div class="modal-content" inDuration="400">
-        <div class="modalContainers">
-          <h4 class="hr">Embedded Game Console</h4>
-            <p>
-
-            <div class="container" style="text-align: center;">
-              <h6> Flappy Bird Demo</h6>
-              <a data-fancybox="gallery_pcb" href="images/flappybirdexp.gif" data-caption="Flappy Bird game demo"><img src="images/flappybirdexp.gif" id="internalGifDemos"></a>
-            </div>
-
-            <h6 class="hr"> Links </h6>
-            <h6>GitHub Link: <a href="https://github.com/relientm96/gameconsole" target="_blank">https://github.com/relientm96/gameconsole</a></h6>
-            <br>
-            <h6 class="hr"> About </h6>
-            <br>
-            Project involving the design and development of a game console electronic embedded system made from scratch. 
-            This was a guided class project but personally added various extensions to the software program
-            of the micro-controller including a battery life reader, brightness control, C library that 
-            renders characters onto the LCD screen and mulitple classic arcade games.
-            <br><br>
-            <h6 class="hr"> Personal Games Programmed </h6>
-            <br>
-            • Flappy Bird (simplified)<br>
-            • Etch A Sketch<br>
-            • Pong (with two level AIs)<br>
-            • Monty Hall<br>
-            <br>
-            <h6 class="hr"> Features of Device </h6>
-            <br>
-            • Boost Converter power circuit to step up from 1.5V battery source to 3.3 V. <br>
-            • Screen brightness control by adjusting Pulse Width Modulation (PWM) frequency. <br>
-            • AVR Studio as an IDE to flash C code onto micro-controller via a JTAG board. <br> 
-            • C character library used for LCD character displays. <br>
-            • Micro-controller interrupt used for event driven program including timer and button interrupts. <br>
-            • Battery level detector using Analog to Digital Conversion. <br>
-            • Serial Peripheral Interface(SPI) and bit banging communication between micro-controller to LCD. <br>
-            <br>
-            <h6 class="hr"> Project Development Chronology </h6> 
-            <br>
-            • Planned and implemented circuit functionality onto schematics on Altium Designer. <br>
-            • Routed and placed components to design Printed Circuit Board.<br>
-            • Soldered on surface mount components.<br>
-            • Programmed simple features on micro-controller using C, JTAG and AVR Studio.<br>
-            • Added various self made games and features to game console device. <br>
-            <br>
-              <div class="divider"></div> 
-              <br>
-
-              <div class="container" style="text-align: center;">
-                <h5 class="hr">Feature Demos (more on GitHub)</h5>
-                <br>
-                  <a data-fancybox="gallery_pcb" href="images/pongDemo.gif" data-caption="Pong Game Demo"><img src="images/pongDemo.gif" id="internalGifDemos"></a>
-                  <h6> Pong Game Demo</h6>
-                  <br>
-                  <a data-fancybox="gallery_pcb" href="images/pwmBrightness.gif" data-caption="Changing brightness using PWM"><img src="images/pwmBrightness.gif" id="internalGifDemos"></a>
-                  <h6> Brightness Control</h6>
-                  <br>
-                  <a data-fancybox="gallery_pcb" href="images/pcbLayout3d.JPG" data-caption="3D PCB Layout on Altium Designer"><img src="images/pcbLayout3d.JPG" id="internalGifDemos"></a>
-                  <h6> 3D PCB Design</h6>
+                <div class="col s12 m4 l3">
+                    <h5 class="white-text">Contact Details</h5>
+                    <p class="grey-text text-lighten-4">
+                        Mobile: +61452139664 <br> Email: matthewyfy@gmail.com<br>
+                    </p>
                 </div>
 
-            </p>
+            </div>
         </div>
-    </div>
-  </div>
 
-  <!-- Cluster Modal -->
-  <div id="clusterModal" class="modal">
-    <div class="modal-content">
-        <div class="modalContainers">
-          <h4 class="hr">Tweet Analysis Cloud Application</h4>
-            <p>
-              <div class="container" style="text-align: center;">
-                  <a data-fancybox="gallery_Cloud" href="images/webSiteDemo.gif" data-caption="Sample demo of the application"><img src="images/webSiteDemo.gif" id="internalGifDemos"></a>
-              </div>
-              <h6 class="hr"> Links </h6>
-              <h6>GitHub Link: <a href="https://github.com/relientm96/SinsOnTwitter" target="_blank">https://github.com/relientm96/SinsOnTwitter</a></h6>
-              <br>
-              <h6 class="hr"> About </h6>
-              <br>
-              Worked in a group of five to develop a cloud based cluster application that analyzes 
-              how "sinful" Australians are on twitter based on the 
-              <a href = "https://en.wikipedia.org/wiki/Seven_deadly_sins" target="_blank"> Seven Deadly Sins </a>.
-              Tweets are harvested, analysed, processed and stored onto a cluster database and results of analysis are
-              displayed to users onto an interactive front end web application. Users could search keywords and select 
-              a particular sin to observe the amount of tweets with that word throughout each state through interactive charts.
-              My main role in the team was to integrate system parts (Web application, database and tweet harvester)
-              into a single three machine cluster system and deploy it onto the NecTAR cloud.
-              
-              <br><br>
-              <h6 class="hr"> Application Features </h6>
-              <br>
-              • Uses a NoSQL CouchDB three node database cluster system. <br>
-              • Tweets harvested across Australia through Python's Tweepy Library. <br>
-              • Around 600,000 tweeets stored across three 80 GB volumes on the cloud. <br>
-              • Tweets processed and analysed using sentiment analysis and word indexing. <br>
-              • Web application designed using Flask and interactive charts created using Chart.js. <br>
-              • Application hosted on three Ubuntu Linux based virtual machines. 
-              <br><br>
-              <h6 class="hr"> Tools used in project </h6>
-              <br>
-              • Ansible for automated system deployment which includes cloud resource provisioning 
-                and Linux bash commands. <br>
-              • CouchDB three node cluster setup using Docker for containerization. <br>
-              • Linux operating system command tools and environment (Ubuntu 18.04). <br>
-              • Apache2 as the HTTP server which proxies requests to the web application through mod_wsgi <br>
-              <br>
-
-              <div class="divider"></div>
-                <div class="container" style="text-align:center">
-                  <h5 class="hr"> Project Gallery </h5>
-                  <br>
-                    <a data-fancybox="gallery_Cloud" data-caption="System Design Diagram" href="images/systemarchitecture.png">
-                      <div class="container">
-                          <img width="100%" src="images/systemarchitecture.png">
-                      </div>
-                    </a>
-                    <h6>Diagram of System Architecture</h6>
-                    <br><br>
-                    <a data-fancybox="gallery_Cloud" href="http://www.youtube.com/watch?v=Mtsm-FB_oQE&t=3m52s" data-caption="My Presentation on System Design and Ansible Deployment Demo">
-                      <img src="images/youtubeDemo.jpg" id="internalGifDemos">
-                    </a>
-                    <h6>Video presentation on System Design and Deployment Demonstration</h6>
-                    <br>
-
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m4 l4">
+                        <span class="text-muted">@ 2019 Matthew Yong</span>
+                    </div>
                 </div>
-
-            </p>
+            </div>
         </div>
-    </div>
-  </div>
 
-  <!-- Web Editor Modal -->
-  <div id="editorModal" class="modal">
-      <div class="modal-content">
-        <div class="modalContainers">
-        <h4 class="hr">Online C Code Editor</h4>
-            <p>
-              <div class="container" style="text-align: center;">
-                  <a data-fancybox href="images/onlineCodeEditorDemo.gif" data-caption="Sample demonstration of application"><img src="images/onlineCodeEditorDemo.gif" id="internalGifDemos"></a>
-              </div>
-              <br>
-
-              <h6 class="hr"> Links </h6>
-              <h6>Application Link: <a href="http://13.229.230.199/" target="_blank"> http://13.229.230.199/ </a> </h6>
-              <h6>GitHub Link: <a href="https://github.com/relientm96/online_code_editor" target="_blank"> https://github.com/relientm96/online_code_editor</a></h6>
-              <br>
-
-              <h6 class="hr"> About </h6>
-              <br>
-              Made a Full Stack online C Code integrated development environment web application where
-              users can log on to run C programs. Backend server created using C++ and POCO C++ Libraries
-              and deployed onto an EC2 Windows server instance on the AWS cloud.
-              Simple code samples are also provided to users.
-              <br><br>
-              <h6 class="hr"> How it works </h6>
-              <br>
-              When a user creates a project from the login screen, a .c file is created on the server's file system.
-              Once the user is happy to compile their program, they would click 'compile' which sends the user's 
-              code on the editor as a text payload to the server. The text is copied into the .c file and the GCC
-              compiler compiles the file. The server then responds by sending either the error output if there is an
-              error in compilation or the successful compiled file output to the browser. Once the user closes the site,
-              an automatic "DELETE" request is made to the server to delete the user's .c and .exe files to clear space.
-              <br><br>
-              <h6 class="hr"> Features </h6>
-              <br>
-              • C++ Backend with GCC 6.3.0 C compiler<br>
-              • FrontEnd user code text editor interface<br>
-              • Sample simple C programs provided<br>
-              • Registration feature for users<br>
-              <br>
-              <h6 class="hr"> Utilized </h6>
-              <br>
-              • POCO C++ Libraries<br>
-              • CodeMirror as code editor<br>
-              • HTML, CSS, Javascript and Bootstrap for front end web design<br>
-              • RESTAPI calls to backend and handling of JSON payload. <br>
-              <br>
- 
-            </p>
         </div>
-      </div>
-  </div>
 
-  <!-- Mobile Modal -->
-  <div id="mobileModal" class="modal">
-      <div class="modal-content">
-          <div class="modalContainers">
-            <h4 class="hr">Social Media Community Application</h4>
+    </footer>
+
+    <!-- Modals -->
+
+    <!-- Game Console Modal -->
+    <div id="embeddedModal" class="modal">
+        <div class="modal-content" inDuration="400">
             <div class="modalContainers">
-                <div class="container" style="text-align: center;">
-                  <div class="row">
-                    <div class="col s4">
-                        <a data-fancybox="gallery_gcapp" href="images/frontLoginScreen.jpg" data-caption="Front Login Screen"><img src="images/frontLoginScreen.jpg" id="internalGifDemos"></a>
-                    </div>
-                    <div class="col s4">
-                        <a data-fancybox="gallery_gcapp" href="images/homeScreen.png" data-caption="Home Screen"><img src="images/homeScreen.png" id="internalGifDemos"></a>
-                    </div>
-                    <div class="col s4">
-                        <a data-fancybox="gallery_gcapp" href="images/UserProfile.png" data-caption="User Settings Screen"><img src="images/UserProfile.png" id="internalGifDemos"></a>
-                    </div>
-                  </div>
-                  <h6>(View project repository <a href="https://github.com/relientm96/gcapp" target="_blank"> here </a>)</h6>              
-                </div>
-
+                <h4 class="hr">Embedded Game Console</h4>
                 <p>
+
+                    <div class="container" style="text-align: center;">
+                        <h6> Flappy Bird Demo</h6>
+                        <a data-fancybox="gallery_pcb" href="images/flappybirdexp.gif" data-caption="Flappy Bird game demo"><img src="images/flappybirdexp.gif" id="internalGifDemos"></a>
+                    </div>
+
                     <h6 class="hr"> Links </h6>
-                    <h6>Application Link: <a href="https://expo.io/@matthewyfy/gcApp " target="_blank"> https://expo.io/@matthewyfy/gcApp  </a> </h6>
-                    <h6>GitHub Link: <a href="https://github.com/relientm96/gcapp" target="_blank"> https://github.com/relientm96/gcapp </a></h6>
+                    <h6>GitHub Link: <a href="https://github.com/relientm96/gameconsole" target="_blank">https://github.com/relientm96/gameconsole</a></h6>
                     <br>
                     <h6 class="hr"> About </h6>
+                    <br> Project involving the design and development of a game console electronic embedded system made from scratch. This was a guided class project but personally added various extensions to the software program of the micro-controller
+                    including a battery life reader, brightness control, C library that renders characters onto the LCD screen and mulitple classic arcade games.
+                    <br><br>
+                    <h6 class="hr"> Personal Games Programmed </h6>
+                    <br> • Flappy Bird (simplified)<br> • Etch A Sketch<br> • Pong (with two level AIs)<br> • Monty Hall<br>
                     <br>
-                    A mobile application developed to provide administrative tools for small christian community members.
-                    This project was built to teach myself React Native and get exposure to mobile app development.
-                    As it is still in development, application demo is only available through the Expo app. 
-                    (Refer to <a href="https://github.com/relientm96/gcapp/blob/develop/README.md" target="_blank">README GitHub</a> link for instructions).
+                    <h6 class="hr"> Features of Device </h6>
+                    <br> • Boost Converter power circuit to step up from 1.5V battery source to 3.3 V. <br> • Screen brightness control by adjusting Pulse Width Modulation (PWM) frequency. <br> • AVR Studio as an IDE to flash C code onto micro-controller
+                    via a JTAG board. <br> • C character library used for LCD character displays. <br> • Micro-controller interrupt used for event driven program including timer and button interrupts. <br> • Battery level detector using Analog to Digital
+                    Conversion. <br> • Serial Peripheral Interface(SPI) and bit banging communication between micro-controller to LCD. <br>
+                    <br>
+                    <h6 class="hr"> Project Development Chronology </h6>
+                    <br> • Planned and implemented circuit functionality onto schematics on Altium Designer. <br> • Routed and placed components to design Printed Circuit Board.<br> • Soldered on surface mount components.<br> • Programmed simple features
+                    on micro-controller using C, JTAG and AVR Studio.<br> • Added various self made games and features to game console device. <br>
+                    <br>
+                    <div class="divider"></div>
+                    <br>
+
+                    <div class="container" style="text-align: center;">
+                        <h5 class="hr">Feature Demos (more on GitHub)</h5>
+                        <br>
+                        <a data-fancybox="gallery_pcb" href="images/pongDemo.gif" data-caption="Pong Game Demo"><img src="images/pongDemo.gif" id="internalGifDemos"></a>
+                        <h6> Pong Game Demo</h6>
+                        <br>
+                        <a data-fancybox="gallery_pcb" href="images/pwmBrightness.gif" data-caption="Changing brightness using PWM"><img src="images/pwmBrightness.gif" id="internalGifDemos"></a>
+                        <h6> Brightness Control</h6>
+                        <br>
+                        <a data-fancybox="gallery_pcb" href="images/pcbLayout3d.JPG" data-caption="3D PCB Layout on Altium Designer"><img src="images/pcbLayout3d.JPG" id="internalGifDemos"></a>
+                        <h6> 3D PCB Design</h6>
+                    </div>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cluster Modal -->
+    <div id="clusterModal" class="modal">
+        <div class="modal-content">
+            <div class="modalContainers">
+                <h4 class="hr">Tweet Analysis Cloud Application</h4>
+                <p>
+                    <div class="container" style="text-align: center;">
+                        <a data-fancybox="gallery_Cloud" href="images/webSiteDemo.gif" data-caption="Sample demo of the application"><img src="images/webSiteDemo.gif" id="internalGifDemos"></a>
+                    </div>
+                    <h6 class="hr"> Links </h6>
+                    <h6>GitHub Link: <a href="https://github.com/relientm96/SinsOnTwitter" target="_blank">https://github.com/relientm96/SinsOnTwitter</a></h6>
+                    <br>
+                    <h6 class="hr"> About </h6>
+                    <br> Worked in a group of five to develop a cloud based cluster application that analyzes how "sinful" Australians are on twitter based on the
+                    <a href="https://en.wikipedia.org/wiki/Seven_deadly_sins" target="_blank"> Seven Deadly Sins </a>. Tweets are harvested, analysed, processed and stored onto a cluster database and results of analysis are displayed to users onto an
+                    interactive front end web application. Users could search keywords and select a particular sin to observe the amount of tweets with that word throughout each state through interactive charts. My main role in the team was to integrate
+                    system parts (Web application, database and tweet harvester) into a single three machine cluster system and deploy it onto the NecTAR cloud.
+
+                    <br><br>
+                    <h6 class="hr"> Application Features </h6>
+                    <br> • Uses a NoSQL CouchDB three node database cluster system. <br> • Tweets harvested across Australia through Python's Tweepy Library. <br> • Around 600,000 tweeets stored across three 80 GB volumes on the cloud. <br> • Tweets processed
+                    and analysed using sentiment analysis and word indexing. <br> • Web application designed using Flask and interactive charts created using Chart.js. <br> • Application hosted on three Ubuntu Linux based virtual machines.
+                    <br><br>
+                    <h6 class="hr"> Tools used in project </h6>
+                    <br> • Ansible for automated system deployment which includes cloud resource provisioning and Linux bash commands. <br> • CouchDB three node cluster setup using Docker for containerization. <br> • Linux operating system command tools
+                    and environment (Ubuntu 18.04). <br> • Apache2 as the HTTP server which proxies requests to the web application through mod_wsgi <br>
+                    <br>
+
+                    <div class="divider"></div>
+                    <div class="container" style="text-align:center">
+                        <h5 class="hr"> Project Gallery </h5>
+                        <br>
+                        <a data-fancybox="gallery_Cloud" data-caption="System Design Diagram" href="images/systemarchitecture.png">
+                            <div class="container">
+                                <img width="100%" src="images/systemarchitecture.png">
+                            </div>
+                        </a>
+                        <h6>Diagram of System Architecture</h6>
+                        <br><br>
+                        <a data-fancybox="gallery_Cloud" href="http://www.youtube.com/watch?v=Mtsm-FB_oQE&t=3m52s" data-caption="My Presentation on System Design and Ansible Deployment Demo">
+                            <img src="images/youtubeDemo.jpg" id="internalGifDemos">
+                        </a>
+                        <h6>Video presentation on System Design and Deployment Demonstration</h6>
+                        <br>
+
+                    </div>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Web Editor Modal -->
+    <div id="editorModal" class="modal">
+        <div class="modal-content">
+            <div class="modalContainers">
+                <h4 class="hr">Online C Code Editor</h4>
+                <p>
+                    <div class="container" style="text-align: center;">
+                        <a data-fancybox href="images/onlineCodeEditorDemo.gif" data-caption="Sample demonstration of application"><img src="images/onlineCodeEditorDemo.gif" id="internalGifDemos"></a>
+                    </div>
+                    <br>
+
+                    <h6 class="hr"> Links </h6>
+                    <h6>Application Link: <a href="http://13.229.230.199/" target="_blank"> http://13.229.230.199/ </a> </h6>
+                    <h6>GitHub Link: <a href="https://github.com/relientm96/online_code_editor" target="_blank"> https://github.com/relientm96/online_code_editor</a></h6>
+                    <br>
+
+                    <h6 class="hr"> About </h6>
+                    <br> Made a Full Stack online C Code integrated development environment web application where users can log on to run C programs. Backend server created using C++ and POCO C++ Libraries and deployed onto an EC2 Windows server instance
+                    on the AWS cloud. Simple code samples are also provided to users.
+                    <br><br>
+                    <h6 class="hr"> How it works </h6>
+                    <br> When a user creates a project from the login screen, a .c file is created on the server's file system. Once the user is happy to compile their program, they would click 'compile' which sends the user's code on the editor as a
+                    text payload to the server. The text is copied into the .c file and the GCC compiler compiles the file. The server then responds by sending either the error output if there is an error in compilation or the successful compiled file
+                    output to the browser. Once the user closes the site, an automatic "DELETE" request is made to the server to delete the user's .c and .exe files to clear space.
                     <br><br>
                     <h6 class="hr"> Features </h6>
+                    <br> • C++ Backend with GCC 6.3.0 C compiler<br> • FrontEnd user code text editor interface<br> • Sample simple C programs provided<br> • Registration feature for users<br>
                     <br>
-                    • Event view for event organization.<br> 
-                    • Allows groups to upload/manage prayers to a prayer list.<br>
-                    • Enable leaders to upload new weekly studies easily.<br>    
-                    <br>        
-                    <h6 class="hr"> Utilized</h6>
+                    <h6 class="hr"> Utilized </h6>
+                    <br> • POCO C++ Libraries<br> • CodeMirror as code editor<br> • HTML, CSS, Javascript and Bootstrap for front end web design<br> • RESTAPI calls to backend and handling of JSON payload. <br>
                     <br>
-                    • React Native as the framework.<br> 
-                    • RESTAPI calls to Firebase backend using fetch api.<br>
-                    • Expo to easily deploy onto mobile device.<br>
-                    <br><br>
+
                 </p>
-              </div>
-          </div>
-      </div>
-  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Modal -->
+    <div id="mobileModal" class="modal">
+        <div class="modal-content">
+            <div class="modalContainers">
+                <h4 class="hr">Social Media Community Application</h4>
+                <div class="modalContainers">
+                    <div class="container" style="text-align: center;">
+                        <div class="row">
+                            <div class="col s4">
+                                <a data-fancybox="gallery_gcapp" href="images/frontLoginScreen.jpg" data-caption="Front Login Screen"><img src="images/frontLoginScreen.jpg" id="internalGifDemos"></a>
+                            </div>
+                            <div class="col s4">
+                                <a data-fancybox="gallery_gcapp" href="images/homeScreen.png" data-caption="Home Screen"><img src="images/homeScreen.png" id="internalGifDemos"></a>
+                            </div>
+                            <div class="col s4">
+                                <a data-fancybox="gallery_gcapp" href="images/UserProfile.png" data-caption="User Settings Screen"><img src="images/UserProfile.png" id="internalGifDemos"></a>
+                            </div>
+                        </div>
+                        <h6>(View project repository <a href="https://github.com/relientm96/gcapp" target="_blank"> here </a>)</h6>
+                    </div>
+
+                    <p>
+                        <h6 class="hr"> Links </h6>
+                        <h6>Application Link: <a href="https://expo.io/@matthewyfy/gcApp " target="_blank"> https://expo.io/@matthewyfy/gcApp  </a> </h6>
+                        <h6>GitHub Link: <a href="https://github.com/relientm96/gcapp" target="_blank"> https://github.com/relientm96/gcapp </a></h6>
+                        <br>
+                        <h6 class="hr"> About </h6>
+                        <br> A mobile application developed to provide administrative tools for small christian community members. This project was built to teach myself React Native and get exposure to mobile app development. As it is still in development,
+                        application demo is only available through the Expo app. (Refer to <a href="https://github.com/relientm96/gcapp/blob/develop/README.md" target="_blank">README GitHub</a> link for instructions).
+                        <br><br>
+                        <h6 class="hr"> Features </h6>
+                        <br> • Event view for event organization.<br> • Allows groups to upload/manage prayers to a prayer list.<br> • Enable leaders to upload new weekly studies easily.<br>
+                        <br>
+                        <h6 class="hr"> Utilized</h6>
+                        <br> • React Native as the framework.<br> • RESTAPI calls to Firebase backend using fetch api.<br> • Expo to easily deploy onto mobile device.<br>
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Arduino Modal -->
     <div id="arduinoModal" class="modal">
         <div class="modal-content">
-          <div class="modalContainers">
-          <h4 class="hr">Seven Segment on Web</h4>
-            <p>
-              <div style="text-align: center;">
-                <a data-fancybox="arduino_gallery" href="images/arduinoWebInterface.JPG"><img src="images/arduinoWebInterface.JPG" id="internalGifDemos"></a>
-              </div>
-              <h6 class="hr"> Links </h6>
-              <h6>GitHub Link: <a href="https://github.com/relientm96/SevenSegment" target="_blank">https://github.com/relientm96/SevenSegment </a></h6>
-              <br>
-              <h6 class="hr"> About </h6>
-              <br>
-              An arduino based project that allows for Seven Segment Digit control over a Web interface. <br>
-              The ESP8266 is used as a Web Server that sends out a html webpage for user interaction. <br>
-              The Arduino UNO is used to collect received serial data (transmitted through UART) 
-              from the ESP8266 and displays the number onto the double digit seven segment display. 
-              <br><br>
-              <h6 class="hr"> Available Modes </h6>
-              <br>
-              • Potentiometer Mode: Control number to display by reading analog pin connected to Potentiometer.<br>
-              • Auto Counter: Arduino automatically increments from 0-99 and displays it.<br>
-              • Web Server Control: Utilizes the input number on Web Interface which it sent to the ESP8266 
-              followed by the UNO for display.<br>   
-              <br><br>
-            </p>
-          </div>
+            <div class="modalContainers">
+                <h4 class="hr">Seven Segment on Web</h4>
+                <p>
+                    <div style="text-align: center;">
+                        <a data-fancybox="arduino_gallery" href="images/arduinoWebInterface.JPG"><img src="images/arduinoWebInterface.JPG" id="internalGifDemos"></a>
+                    </div>
+                    <h6 class="hr"> Links </h6>
+                    <h6>GitHub Link: <a href="https://github.com/relientm96/SevenSegment" target="_blank">https://github.com/relientm96/SevenSegment </a></h6>
+                    <br>
+                    <h6 class="hr"> About </h6>
+                    <br> An arduino based project that allows for Seven Segment Digit control over a Web interface. <br> The ESP8266 is used as a Web Server that sends out a html webpage for user interaction. <br> The Arduino UNO is used to collect received
+                    serial data (transmitted through UART) from the ESP8266 and displays the number onto the double digit seven segment display.
+                    <br><br>
+                    <h6 class="hr"> Available Modes </h6>
+                    <br> • Potentiometer Mode: Control number to display by reading analog pin connected to Potentiometer.<br> • Auto Counter: Arduino automatically increments from 0-99 and displays it.<br> • Web Server Control: Utilizes the input number
+                    on Web Interface which it sent to the ESP8266 followed by the UNO for display.<br>
+                    <br><br>
+                </p>
+            </div>
         </div>
     </div>
 
-      <!-- Game Modal -->
-      <div id="gameModal" class="modal">
-          <div class="modal-content">
+    <!-- Game Modal -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
             <div class="modalContainers">
-              <h4 class="hr">Shadow Blocks Game</h4>
-              <p>
-                <div class="container">
-                  <a data-fancybox href="images/shadowBlockDemo.gif"><img src="images/shadowBlockDemo.gif" id="internalGifDemos"></a>
+                <h4 class="hr">Shadow Blocks Game</h4>
+                <p>
+                    <div class="container">
+                        <a data-fancybox href="images/shadowBlockDemo.gif"><img src="images/shadowBlockDemo.gif" id="internalGifDemos"></a>
+                    </div>
+                    <p>
+                        <h6 class="hr"> Links </h6>
+                        <h6>GitHub Link: <a href="https://github.com/relientm96/ShadowBlocks" target="_blank"> https://github.com/relientm96/ShadowBlocks </a></h6>
+                        <br>
+                        <h6 class="hr"> About </h6>
+                        <br> An Object Oriented based game designed using Java and Slick2D Graphical Libraries. This was a class project for my object oriented course, in which I personally extended it by adding more puzzle levels and new sprites with
+                        different behaviours and actions.
+                        <br><br>
+                        <h6 class="hr"> Features </h6>
+                        <br> • Different player actions for each level.<br> • 20 Levels of challenging puzzles to solve.<br> • Built using Java and Slick2D (Java 2D game library).<br> • Levels are made using csv files, where each row stores the sprite
+                        name to render, x coordinate and y coordinate render positions. <br> • Game sprites are created using a factory design pattern. <br>
+                        <br>
+                        <h6 class="hr"> Utilized</h6>
+                        <br> • Java Eclipse IDE to develop application.<br> • Slick2d Graphical Libraries for spirte rendering.<br>
+                        <br><br>
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mario Modal -->
+    <div id="marioModal" class="modal">
+        <div class="modal-content">
+            <div class="modalContainers">
+                <h4 class="hr">Online Greenhouse Mangement System</h4>
+                <div class="container" style="text-align:center">
+                    <a data-fancybox="mario_gallery" href="images/marioWebDemo.mp4" data-caption="Application Demonstration"><img src="images/mariowebimg.jpg" id="internalGifDemos">
+                    </a>
+                    <h6>Video demonstration of web application</h6>
+                    <br>
+                    <a data-fancybox="mario_gallery" href="images/MarioDemo.mp4" data-caption="Alarm Demonstration of System"><img src="images/mariodemoimg.jpg" id="internalGifDemos">
+                    </a>
+                    <h6>Video demonstration of alarm</h6>
                 </div>
                 <p>
                     <h6 class="hr"> Links </h6>
-                    <h6>GitHub Link: <a href="https://github.com/relientm96/ShadowBlocks" target="_blank"> https://github.com/relientm96/ShadowBlocks </a></h6>
+                    <h6>Application Link: <a href="http://pollpots.dynalias.com" target="_blank">http://pollpots.dynalias.com</a></h6>
+                    <h6>GitHub Link: <a href="https://github.com/relientm96/plantHumidity" target="_blank"> https://github.com/relientm96/plantHumidity </a></h6>
                     <br>
                     <h6 class="hr"> About </h6>
-                    <br>
-                    An Object Oriented based game designed using Java and Slick2D Graphical Libraries.
-                    This was a class project for my object oriented course, in which I personally extended it 
-                    by adding more puzzle levels and new sprites with different behaviours and actions. 
+                    <br> This project was built to manage or control remote sensors using an online web application interface. on the cloud. Web application client polls the ESP8266 Sensor Server to get live sensor data. ESP8266 server configured using
+                    ESP8266's Web Server Libraries and Arduino IDE.
                     <br><br>
                     <h6 class="hr"> Features </h6>
+                    <br> • Online web interface that lets user track live sensor data.<br> • Alarm on device when an object approaches close to the device.<br> • Piezo Buzzer that plays the Mario theme or the Pirates of the Caribbean theme.<br>
                     <br>
-                    • Different player actions for each level.<br>
-                    • 20 Levels of challenging puzzles to solve.<br>
-                    • Built using Java and Slick2D (Java 2D game library).<br>     
-                    • Levels are made using csv files, where each row stores the 
-                    sprite name to render, x coordinate and y coordinate render positions. <br>
-                    • Game sprites are created using a factory design pattern. <br>
-                    <br>        
                     <h6 class="hr"> Utilized</h6>
-                    <br>
-                    • Java Eclipse IDE to develop application.<br>
-                    • Slick2d Graphical Libraries for spirte rendering.<br>
+                    <br> • Ubuntu EC2 AWS to deploy application.<br> • Express Backend.<br> • CouchDB Database.<br> • HTML, CSS, Javascript and JQuery.<br> • Materialize as CSS framework in user interface design.<br> • Continuos AJAX queries to remote
+                    sensor server. <br>
                     <br><br>
                 </p>
+                <div class="divider"></div>
+                <div class="container" style="text-align:center">
+                    <h5 class=hr> Project Gallery </h5>
+                    <a data-fancybox="mario_gallery" href="images/mariosideview.jpg" data-caption="Side View of Device"><img src="images/mariosideview.jpg" id="internalGifDemos">
+                    </a>
+                    <h6>Side View of Device</h6>
+                    <a data-fancybox="mario_gallery" href="images/mariotopview.jpg" data-caption="Top View of Device"><img src="images/mariotopview.jpg" id="internalGifDemos">
+                    </a>
+                    <h6>Top view of Device</h6>
+                </div>
             </div>
-          </div>
-      </div>
-
-      <!-- Mario Modal -->
-      <div id="marioModal" class="modal">
-        <div class="modal-content">
-          <div class="modalContainers">
-          <h4 class="hr">Online Greenhouse Mangement System</h4>
-          <div class="container" style="text-align:center">
-            <a data-fancybox="mario_gallery" href="images/marioWebDemo.mp4" data-caption="Application Demonstration"><img src="images/mariowebimg.jpg" id="internalGifDemos">
-            </a>
-            <h6>Video demonstration of web application</h6>
-            <br>
-            <a data-fancybox="mario_gallery" href="images/MarioDemo.mp4" data-caption="Alarm Demonstration of System"><img src="images/mariodemoimg.jpg" id="internalGifDemos">
-            </a>
-            <h6>Video demonstration of alarm</h6>
-          </div>
-              <p>
-                <h6 class="hr"> Links </h6>
-                <h6>Application Link: <a href="http://pollpots.dynalias.com" target="_blank">http://pollpots.dynalias.com</a></h6>
-                <h6>GitHub Link: <a href="https://github.com/relientm96/plantHumidity" target="_blank"> https://github.com/relientm96/plantHumidity </a></h6>
-                <br>
-                <h6 class="hr"> About </h6>
-                <br>
-                This project was built to manage or control remote sensors using an online web application interface.
-                on the cloud. Web application client polls the ESP8266 Sensor Server to get live sensor data.
-                ESP8266 server configured using ESP8266's Web Server Libraries and Arduino IDE.
-                <br><br>
-                <h6 class="hr"> Features </h6>
-                <br>
-                • Online web interface that lets user track live sensor data.<br>
-                • Alarm on device when an object approaches close to the device.<br>
-                • Piezo Buzzer that plays the Mario theme or the Pirates of the Caribbean theme.<br>       
-                <br>        
-                <h6 class="hr"> Utilized</h6>
-                <br>
-                • Ubuntu EC2 AWS to deploy application.<br>
-                • Express Backend.<br>
-                • CouchDB Database.<br>
-                • HTML, CSS, Javascript and JQuery.<br>
-                • Materialize as CSS framework in user interface design.<br>
-                • Continuos AJAX queries to remote sensor server. <br>
-                <br><br>
-              </p>
-              <div class="divider"></div>
-              <div class="container" style="text-align:center">
-                <h5 class=hr> Project Gallery </h5>
-                  <a data-fancybox="mario_gallery" href="images/mariosideview.jpg" data-caption="Side View of Device"><img src="images/mariosideview.jpg" id="internalGifDemos">
-                  </a>
-                  <h6>Side View of Device</h6>
-                  <a data-fancybox="mario_gallery" href="images/mariotopview.jpg" data-caption="Top View of Device"><img src="images/mariotopview.jpg" id="internalGifDemos">
-                  </a>
-                  <h6>Top view of Device</h6>
-                  </div>
-          </div>
         </div>
-      </div>      
+    </div>
 
 
-      <!-- About Site Modal -->
-      <div id="aboutSiteModal" class="modal">
-          <div class="modal-content">
+    <!-- About Site Modal -->
+    <div id="aboutSiteModal" class="modal">
+        <div class="modal-content">
             <div class="modalContainers">
-            <h3 class="hr"> About this Site</h3>
+                <h3 class="hr"> About this Site</h3>
                 <p class="flow-text">
-                  This site was built to leverage my knowledge in Front End web design
-                  using HTML, CSS, Javascript. <br><br>
-                  • Built using <a href="https://materializecss.com/" target="_blank">Materialize</a>, 
-                  a modern responsive CSS framework. <br>
-                  • Media Viewing using <a href="http://fancybox.net/" target="_blank">fancybox</a>, <br>
-                  • Fade Animations using <a href="https://daneden.github.io/animate.css/" target="_blank">animate.css</a> and <a href="http://imakewebthings.com/waypoints/" target="_blank">waypoints</a>, <br>
-                  • Hosted on Github pages <a href="https://github.com/relientm96/matthewyong" target="_blank">(Link to Repository)</a>. <br>
+                    This site was built to leverage my knowledge in Front End web design using HTML, CSS, Javascript. <br><br> • Built using <a href="https://materializecss.com/" target="_blank">Materialize</a>, a modern responsive CSS framework. <br>                    • Media Viewing using <a href="http://fancybox.net/" target="_blank">fancybox</a>, <br> • Fade Animations using <a href="https://daneden.github.io/animate.css/" target="_blank">animate.css</a> and <a href="http://imakewebthings.com/waypoints/"
+                        target="_blank">waypoints</a>, <br> • Hosted on Github pages <a href="https://github.com/relientm96/matthewyong" target="_blank">(Link to Repository)</a>. <br>
                 </p>
             </div>
-          </div>
-      </div>
+        </div>
+    </div>
 
-      <script src="js/materialize.js"></script>
-      <script src="js/init.js"></script>
-      <script src="js/site.js"></script> 
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/site.js"></script>
 
 </body>
+
 </html>

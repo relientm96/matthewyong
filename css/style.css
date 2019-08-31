@@ -1,131 +1,143 @@
 /* Custom Stylesheet */
+
+
 /* Matthew Yong */
 
- /*Tag Styling*/
- 
+
+/*Tag Styling*/
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 body {
-  background-color: #eee;
+    background-color: #eee;
 }
 
 div {
-  display: block;
+    display: block;
 }
 
+
 /*Nav Bar Styling*/
+
 .icon-block {
-  padding: 0 15px;
+    padding: 0 15px;
 }
+
 .icon-block .material-icons {
-	font-size: inherit;
+    font-size: inherit;
 }
 
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
 }
 
 .nav-center {
-  width: 1200px;
+    width: 1200px;
 }
 
 nav.nav-center ul {
-  text-align: center;
+    text-align: center;
 }
+
 nav.nav-center ul li {
-  display: inline;
-  float: none;
+    display: inline;
+    float: none;
 }
+
 nav.nav-center ul li a {
-  display: inline-block;
+    display: inline-block;
 }
 
 .icons {
-  float: right;
-  height: 60px;
-  width: 150px;
+    float: right;
+    height: 60px;
+    width: 150px;
 }
 
-#logo-container{
-  position: relative;
-  left: 200px;
+#logo-container {
+    position: relative;
+    left: 200px;
 }
 
-#icon-container{
-  position: relative;
-  right: 150px; 
+#icon-container {
+    position: relative;
+    right: 150px;
 }
+
 
 /*Header Lines*/
+
 .hr {
-  display: inline-block;
+    display: inline-block;
 }
 
 .hr:after {
-  content: '';
-  display: block;
-  border-top: 6px;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
+    content: '';
+    display: block;
+    border-top: 6px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
 }
 
 .mainBackgroundImage {
-  background-image: url("../images/titleBackgroundDarken.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  position: absolute;
-  width:100%;
-  height:100%;
-  filter:brightness(80%);
+    background-image: url("../images/titleBackgroundDarken.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(80%);
 }
 
-#bannerBr{
-  content: "";
-  margin: 2.4em;
-  display: block;
-  font-size: 23%;
+#bannerBr {
+    content: "";
+    margin: 2.4em;
+    display: block;
+    font-size: 23%;
 }
 
-#embeddedGif{
-  filter: brightness(40%);
+#embeddedGif {
+    filter: brightness(40%);
 }
 
-#clusterGif{
-  filter: brightness(40%);
+#clusterGif {
+    filter: brightness(40%);
 }
 
-#marioGif{
-  filter: brightness(55%);
+#marioGif {
+    filter: brightness(55%);
 }
 
-#codeGif{
-  filter: brightness(50%);
+#codeGif {
+    filter: brightness(50%);
 }
 
-#mobileGif{
-  filter: brightness(40%);
-  height: 100%;
-  width: 100%;
+#mobileGif {
+    filter: brightness(40%);
+    height: 100%;
+    width: 100%;
 }
 
-#arduinoGif{
-  filter: brightness(20%);
+#arduinoGif {
+    filter: brightness(20%);
 }
 
-#gameGif{
-  filter: brightness(50%);
+#gameGif {
+    filter: brightness(50%);
 }
+
 
 /*
 .modal {
@@ -134,183 +146,193 @@ nav.nav-center ul li a {
 }
 */
 
-.mainBanner{
-  align-content: center;
-  justify-content: center;
+.mainBanner {
+    align-content: center;
+    justify-content: center;
 }
 
-#profilePic{
-  height: 100%;
-  width: 100%;
-  justify-content: center
+#profilePic {
+    height: 100%;
+    width: 100%;
+    justify-content: center
 }
 
-#systemarchitectureImage{
-  max-height: 30%;
-  max-width: 100%;
+#systemarchitectureImage {
+    max-height: 30%;
+    max-width: 100%;
 }
 
-#internalGifDemos{
-  max-height: 100%;
-  max-width: 100%;
+#internalGifDemos {
+    max-height: 100%;
+    max-width: 100%;
 }
 
-#bannerContainer{
-  width: 100%;
-  max-width:initial;
-  left: 0;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  align-content: center;
+#bannerContainer {
+    width: 100%;
+    max-width: initial;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    align-content: center;
 }
 
-.nopaddingbanner{
-  padding: 0 !important;
-  margin: 0 !important;
+.nopaddingbanner {
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
-.section-content{
-  margin-top: 30px;
+.section-content {
+    margin-top: 30px;
 }
 
-.iconCenteringAnchor{
-  justify-content: center;
-  align-items:center;
+.iconCenteringAnchor {
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutMecontainers {
-  margin: 0 auto;
-  max-width: 100%;
-  width: 90%;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 90%;
 }
 
-.modalContainers{
-  margin: 0 auto;
-  max-width: 100%;
-  width: 90%;
+.modalContainers {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 90%;
 }
 
-#modalGospelCommunityApp{
-  margin: 0 auto;
-  max-width: 100%;
-  height: 50%;
+#modalGospelCommunityApp {
+    margin: 0 auto;
+    max-width: 100%;
+    height: 50%;
 }
 
 .table {
-	display: table;  
-  margin: 0 auto;
-  width: 20%;
-  height: 80px;
+    display: table;
+    margin: 0 auto;
+    width: 20%;
+    height: 80px;
 }
 
 ul#horizontal-list {
-	min-width: 696px;
-	list-style: none;
-	}
-	ul#horizontal-list li {
-		display: inline;
-  }
-  
+    min-width: 696px;
+    list-style: none;
+}
+
+ul#horizontal-list li {
+    display: inline;
+}
+
 figure {
-  display: inline-block;
-  margin: 10px; 
+    display: inline-block;
+    margin: 10px;
 }
 
 figure img {
-  vertical-align: top;
-  align-items: center;
-  justify-content: center;
-}
-figure figcaption {
-  text-align: center;
+    vertical-align: top;
+    align-items: center;
+    justify-content: center;
 }
 
-.headerContainer{
-  float: left;
-  width: 10px;
-  height: 10px;
-  background: #555;
+figure figcaption {
+    text-align: center;
+}
+
+.headerContainer {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background: #555;
 }
 
 .header h3 {
-  position: relative;
-  top: 18px;
-  left: 10px;
+    position: relative;
+    top: 18px;
+    left: 10px;
 }
 
 @import url('//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css');
 .universal-inline-block {
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
 }
+
 .social-icons {
-  text-align: center;
-  font-family: "Open Sans";
-  font-weight: 300;
-  font-size: 1.5em;
+    text-align: center;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 1.5em;
 }
+
 .social-icons h1 {
-  margin: 10px 0;
+    margin: 10px 0;
 }
+
 .social-icons ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  padding-right: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 30px;
 }
+
 .social-icons ul li {
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-  vertical-align: middle;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: middle;
 }
+
 .social-icons ul li a {
-  display: block;
-  font-size: 1.4em;
-  margin: 0 5px;
-  text-decoration: none;
+    display: block;
+    font-size: 1.4em;
+    margin: 0 5px;
+    text-decoration: none;
 }
+
 .social-icons ul li a i {
-  color: #448aaf;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+    color: #448aaf;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
+
 .social-icons ul li a:hover i {
-  color:white;
+    color: white;
 }
+
 .social-icons ul li a:focus i,
 .social-icons ul li a:active i {
-  transition: none;
-  color: #0b161c;
+    transition: none;
+    color: #0b161c;
 }
 
-p.aboutMeMain{
-  font-size: 16.5px;
+p.aboutMeMain {
+    font-size: 16.5px;
 }
 
-.toolTitle{
-  padding-left: 4px;
+.toolTitle {
+    padding-left: 4px;
 }
 
-.buttonNavi{
-  text-align: center;
+.buttonNavi {
+    text-align: center;
 }
 
-.bannerText{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+.bannerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .bannertext-wrapper {
-  position: relative;
-  top: 40%;
-  transform: translateY(-50%);
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
 }
