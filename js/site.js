@@ -40,6 +40,28 @@ $(document).ready(function() {
         inDuration: 400,
         outDuration: 400
     });
+
+
+    $('.carousel').carousel({
+        noWrap: true,
+        fullWidth: true,
+        indicators: false
+    });
+
+    // move next carousel
+    $('.moveNextCarousel').click(function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.carousel').carousel('next');
+    });
+
+    // move prev carousel
+    $('.movePrevCarousel').click(function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.carousel').carousel('prev');
+    });
+
 });
 
 //For Smooth Scrolling to anchor
