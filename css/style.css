@@ -108,43 +108,60 @@ nav.nav-center ul li a {
     font-size: 23%;
 }
 
-#embeddedGif {
-    filter: brightness(40%);
+#codeGif {
+    width: max-width;
+    max-height: 300px;
 }
 
 #clusterGif {
-    filter: brightness(40%);
+    width: max-width;
+    max-height: 300px;
+}
+
+#embeddedGif {
+    width: max-width;
+    max-height: 300px;
 }
 
 #marioGif {
-    filter: brightness(55%);
-}
-
-#codeGif {
-    filter: brightness(50%);
+    width: max-width;
+    max-height: 300px;
 }
 
 #mobileGif {
-    filter: brightness(40%);
-    height: 100%;
-    width: 100%;
+    width: max-width;
+    max-height: 300px;
 }
 
 #arduinoGif {
-    filter: brightness(20%);
+    width: max-width;
+    max-height: 300px;
 }
 
 #gameGif {
-    filter: brightness(50%);
+    width: max-width;
+    max-height: 300px;
 }
 
-
-/*
-.modal {
-  width: 100% !important ; 
-  height: 100% !important ; 
+#dsoGif {
+    width: max-width;
+    max-height: 300px;
 }
-*/
+
+#sigGenGif {
+    width: max-width;
+    max-height: 300px;
+}
+
+#pedalGif {
+    width: max-width;
+    max-height: 300px;
+}
+
+#meterGif {
+    width: max-width;
+    max-height: 300px;
+}
 
 .mainBanner {
     align-content: center;
@@ -313,7 +330,7 @@ figure figcaption {
 }
 
 p.aboutMeMain {
-    font-size: 16.5px;
+    font-size: 14px;
 }
 
 .toolTitle {
@@ -335,4 +352,9 @@ p.aboutMeMain {
     position: relative;
     top: 40%;
     transform: translateY(-50%);
+}
+
+.card-reveal {
+    color: #ffffff;
+    background-color: rgba(19, 17, 17, 0.7) !important;
 }

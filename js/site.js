@@ -9,6 +9,16 @@ $(document).ready(function() {
         hoverEnabled: false
     });
 
+    //Tooltips addition
+    $(".tooltipped").tooltip();
+
+    //Modal Initialization and Configurations
+    $(".modal").modal({
+        inDuration: 400,
+        outDuration: 400,
+    });
+
+    /*
     //Slider Initialization and Configurations
     $(".slider").slider({
         full_width: true,
@@ -17,9 +27,6 @@ $(document).ready(function() {
         duration: 750,
         indicators: true
     });
-
-    //Tooltips addition
-    $(".tooltipped").tooltip();
 
     $(window).on("hashchange", function() {
         if (window.location.href.includes("projectSection")) {
@@ -34,13 +41,6 @@ $(document).ready(function() {
     $("#projectSection").waypoint(function() {
         $(".slider").slider("start");
     });
-
-    //Modal Initialization and Configurations
-    $(".modal").modal({
-        inDuration: 400,
-        outDuration: 400
-    });
-
 
     $('.carousel').carousel({
         noWrap: true,
@@ -61,7 +61,7 @@ $(document).ready(function() {
         e.stopPropagation();
         $('.carousel').carousel('prev');
     });
-
+    */
 });
 
 //For Smooth Scrolling to anchor
@@ -72,4 +72,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: "smooth"
         });
     });
+});
+
+// Activate Card Reveal on Mouse Hover
+$(function() {
+    $('.card').hover(
+        function() {
+            $(this).find('> .card-image > img.activator').click();
+        },
+        function() {
+            $(this).find('> .card-reveal > .card-title').click();
+        }
+    );
 });
