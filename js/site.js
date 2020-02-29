@@ -18,50 +18,6 @@ $(document).ready(function() {
         outDuration: 400,
     });
 
-    /*
-    //Slider Initialization and Configurations
-    $(".slider").slider({
-        full_width: true,
-        height: 475,
-        interval: 6000,
-        duration: 750,
-        indicators: true
-    });
-
-    $(window).on("hashchange", function() {
-        if (window.location.href.includes("projectSection")) {
-            $(".slider").slider("start");
-        }
-    });
-
-    $(".slider").ready(function() {
-        $(".slider").slider("pause");
-    });
-
-    $("#projectSection").waypoint(function() {
-        $(".slider").slider("start");
-    });
-
-    $('.carousel').carousel({
-        noWrap: true,
-        fullWidth: true,
-        indicators: false
-    });
-
-    // move next carousel
-    $('.moveNextCarousel').click(function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        $('.carousel').carousel('next');
-    });
-
-    // move prev carousel
-    $('.movePrevCarousel').click(function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        $('.carousel').carousel('prev');
-    });
-    */
 });
 
 //For Smooth Scrolling to anchor

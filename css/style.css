@@ -182,10 +182,7 @@ nav.nav-center ul li a {
     max-width: 100%;
 }
 
-#internalGifDemos {
-    max-height: 100%;
-    max-width: 100%;
-}
+#internalGifDemos {}
 
 #bannerContainer {
     width: 100%;
