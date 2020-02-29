@@ -13,6 +13,8 @@ html {
 body {
     /*background-color: #eee;*/
     background-color: #F3F3F3;
+    height: 100%;
+    margin: 0;
 }
 
 div {
@@ -331,7 +333,7 @@ figure figcaption {
 }
 
 p.aboutMeMain {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .toolTitle {
