@@ -114,7 +114,8 @@ nav.nav-center ul li a {
 
 #codeGif {
     width: max-width;
-    max-height: 350px;
+    max-height: 400px;
+    height: auto;
 }
 
 #totoGif {
@@ -130,7 +131,6 @@ nav.nav-center ul li a {
 #embeddedGif {
     width: max-width;
     max-height: 350px;
-    height: auto;
 }
 
 #marioGif {

@@ -29,6 +29,9 @@ $(document).ready(function() {
         inDuration: 400,
         outDuration: 400,
     });
+
+    $('.collapsible').collapsible();
+
 });
 
 //For Smooth Scrolling to anchor
