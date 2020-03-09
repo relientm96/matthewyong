@@ -3,6 +3,18 @@
 $(document).ready(function() {
     InitWaypointAnimations();
 
+    // Tap target addition
+    $('.tap-target').tapTarget();
+
+    var abouMeWaypoint = new Waypoint({
+        element: document.getElementById("aboutMeSection"),
+        handler: function(direction) {
+            if (direction == "down") {
+                $('.tap-target').tapTarget().tapTarget("open");
+            }
+        }
+    })
+
     //Floating Button Initialization
     $(".fixed-action-btn").floatingActionButton({
         direction: "top",
@@ -17,7 +29,6 @@ $(document).ready(function() {
         inDuration: 400,
         outDuration: 400,
     });
-
 });
 
 //For Smooth Scrolling to anchor

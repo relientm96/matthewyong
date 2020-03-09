@@ -114,57 +114,63 @@ nav.nav-center ul li a {
 
 #codeGif {
     width: max-width;
-    max-height: 400px;
+    max-height: 350px;
+}
+
+#totoGif {
+    width: max-width;
+    max-height: 350px;
 }
 
 #clusterGif {
     width: max-width;
-    max-height: 300px;
+    max-height: 350px;
 }
 
 #embeddedGif {
     width: max-width;
-    max-height: 420px;
+    max-height: 350px;
+    height: auto;
 }
 
 #marioGif {
     width: max-width;
-    max-height: 300px;
+    max-height: 350px;
 }
 
 #mobileGif {
     width: max-width;
-    max-height: 300px;
+    max-height: 350px;
 }
 
 #arduinoGif {
     width: max-width;
-    max-height: 300px;
+    max-height: 350px;
 }
 
 #gameGif {
     width: max-width;
-    max-height: 300px;
+    max-height: 350px;
 }
 
 #dsoGif {
     width: max-width;
-    max-height: 300px;
+    max-height: 350px;
 }
 
 #sigGenGif {
     width: max-width;
-    max-height: 300px;
+    max-height: 350px;
 }
 
 #pedalGif {
     width: max-width;
-    max-height: 300px;
+    max-height: 350px;
 }
 
 #meterGif {
     width: max-width;
-    max-height: 300px;
+    max-height: 350px;
 }
 
 .mainBanner {
